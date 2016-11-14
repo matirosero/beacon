@@ -1,0 +1,347 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: beacon 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-06-12 21:51:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:15
+#@ beacon
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+#@ beacon
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:27
+#@ beacon
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:44
+#, php-format
+#@ beacon
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+#@ beacon
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+#: comments.php:59
+#@ beacon
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41
+#: comments.php:62
+#@ beacon
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42
+#: comments.php:63
+#@ beacon
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+#@ beacon
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:16
+#@ beacon
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:16
+#, php-format
+#@ beacon
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:18
+#, php-format
+#@ beacon
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:45
+#: header.php:32
+#@ beacon
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:100
+#@ beacon
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:23
+#@ beacon
+msgid "Skip to content"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+#@ beacon
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:23
+#@ beacon
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+#@ beacon
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+#@ beacon
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+#@ beacon
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:86
+#, php-format
+#@ beacon
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+#@ beacon
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:108
+#: inc/template-tags.php:114
+#@ beacon
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:110
+#, php-format
+#@ beacon
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:116
+#, php-format
+#@ beacon
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ beacon
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ beacon
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+#@ beacon
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:126
+#: template-parts/content-page.php:26
+#@ beacon
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:143
+#, php-format
+#@ beacon
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:145
+#, php-format
+#@ beacon
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:147
+#, php-format
+#@ beacon
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#, php-format
+#@ beacon
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#@ beacon
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:151
+#, php-format
+#@ beacon
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:151
+#@ beacon
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:153
+#, php-format
+#@ beacon
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:153
+#@ beacon
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:156
+#@ beacon
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:158
+#@ beacon
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:160
+#@ beacon
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:162
+#@ beacon
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:164
+#@ beacon
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:166
+#@ beacon
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:168
+#@ beacon
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:170
+#@ beacon
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:172
+#@ beacon
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:175
+#, php-format
+#@ beacon
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:179
+#, php-format
+#@ beacon
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:181
+#@ beacon
+msgid "Archives"
+msgstr ""
+
+#: search.php:16
+#, php-format
+#@ beacon
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+#@ beacon
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+#, php-format
+#@ beacon
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:24
+#@ beacon
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:29
+#@ beacon
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:19
+#: template-parts/content-single.php:23
+#: template-parts/content.php:32
+#@ beacon
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content.php:25
+#, php-format
+#@ beacon
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""

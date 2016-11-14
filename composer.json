@@ -1,0 +1,9 @@
+{
+    "name": "mro/beacon",
+    "type": "wordpress-theme",
+    "minimum-stability": "dev",
+    "version": "2.0.3",
+    "require": {
+        "aaronholbrook/autoload": "^1.2"
+    }
+}
