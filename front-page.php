@@ -17,6 +17,10 @@ get_header(); ?>
 
 			<main id="main" class="site-main" role="main">
 			<?php
+
+			$intro  = get_post_meta( get_the_ID(), 'frontpage_intro', true );
+			echo $intro;
+
 			if ( have_posts() ) :
 
 				while ( have_posts() ) :
