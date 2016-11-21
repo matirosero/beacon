@@ -48,8 +48,10 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$beacon-green: #048689;
+$beacon-orange: #F89E1C;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: $beacon-green,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -57,8 +59,8 @@ $foundation-palette: (
 );
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$dark-gray: #6d6e71; //#8a8a8a;
+$black: #545656; //#0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
