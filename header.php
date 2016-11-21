@@ -39,9 +39,9 @@
 			<?php
 			 $args = array (
 				 'theme_location' 	=> 'primary',
-				 'container' 				=> 'nav',
+				 'container' 		=> 'nav',
 				 'container_class'	=> 'offcanvas-navigation',
-				 'menu_class' 			=> 'mobile-menu',
+				 'menu_class' 		=> 'mobile-menu',
 			 );
 				wp_nav_menu( $args );
 			?>
