@@ -1,6 +1,11 @@
 // Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+@include font-face("Tex Gyre Adventor", "../fonts/texgyreadventor-regular-webfont", normal, normal);
+@include font-face("Tex Gyre Adventor", "../fonts/texgyreadventor-italic-webfont", normal, italic);
+@include font-face("Tex Gyre Adventor", "../fonts/texgyreadventor-bold-webfont", bold, normal);
+@include font-face("Tex Gyre Adventor", "../fonts/texgyreadventor-bolditalic-webfont", bold, italic);
+
 p {
 	margin: 0;
 }
