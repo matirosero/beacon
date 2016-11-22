@@ -383,7 +383,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: map-get($foundation-palette, primary);
+$menu-item-background-active: transparent;//map-get($foundation-palette, primary);
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter
@@ -400,14 +400,14 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-background: $beacon-green;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
 $maincontent-class: 'off-canvas-content';
-$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+$maincontent-shadow: 0 0 10px rgba($black, 0.75);
 
 // 25. Orbit
 // ---------
@@ -537,12 +537,12 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $beacon-green;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color-hover: $beacon-orange;
 $titlebar-icon-spacing: 0.25rem;
 
 // 35. Tooltip
@@ -562,7 +562,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $beacon-green;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

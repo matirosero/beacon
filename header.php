@@ -48,21 +48,22 @@
 			<div id="content" class="site-content">
 		*/ ?>
 
-	<div class="title-bar show-for-small-only">
-	  <div class="title-bar-left">
-		<button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
-		<span class="title-bar-title"><?php bloginfo( 'name' ); ?></span>
-	  </div>
-	</div><!-- .title-bar -->
+		<!-- off-canvas title bar for 'small' screen -->
+		<div class="title-bar" data-hide-for="medium" data-responsive-toggle="main-menu">
+		  <div class="title-bar-left">
+			<button class="menu-icon" type="button" data-toggle="offCanvasLeft"></button>
+			<span class="title-bar-title"><?php bloginfo( 'name' ); ?></span>
+		  </div>
+		</div><!-- .title-bar -->
 
 
-	<!-- <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-	  <button class="menu-icon" type="button" data-toggle></button>
-	  <div class="title-bar-title">Menu</div>
-	</div> -->
+		<!-- <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+		  <button class="menu-icon" type="button" data-toggle></button>
+		  <div class="title-bar-title">Menu</div>
+		</div> -->
 
 
-	<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+		<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
 			<button class="close-button" aria-label="Close menu" type="button" data-close>
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -75,53 +76,30 @@
 			 );
 				wp_nav_menu( $args );
 			?>
-	</div><!-- #offCanvasLeft -->
-	<div class="off-canvas-content" data-off-canvas-content>
+		</div><!-- #offCanvasLeft -->
+		<div class="off-canvas-content" data-off-canvas-content>
 
 			<header id="masthead" class="" role="banner">
 
 
+			    <nav id="main-menu" class="top-bar hide-for-small-only">
+			      <section class="top-bar-left hide-for-small-only">
+			        <ul class="dropdown menu" data-dropdown-menu>
+			          <li>
+			            <h1 class="site-title">
+			              <a href="<?php esc_attr_e( home_url( '/' ) ); ?>" rel="home">
+			                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/svg/logo-beacon-topbar.svg" alt="<?php bloginfo( 'name' ); ?>" />
+			              </a>
+			            </h1>
+			          </li>
+			        </ul>
+			      </section>
+			      <section class="top-bar-right hide-for-small-only">
+			        <?php joints_top_nav(); ?>
+			      </section>
+			    </nav><!-- #site-navigation -->
 
-<div class="top-bar" id="main-menu">
-  <div class="top-bar-left">
-	<ul class="dropdown menu" data-dropdown-menu>
-	  <li class="menu-text">
-		<h1 class="site-title">
-			<a href="<?php esc_attr_e( home_url( '/' ) ); ?>" rel="home">
-				<?php bloginfo( 'name' ); ?>
-			</a>
-		</h1>
-	  </li>
-	</ul>
-  </div>
-  <div class="top-bar-right">
-	<ul class="menu" data-responsive-menu="drilldown small-dropdown">
-	  <li class="has-submenu">
-		<a href="#">One</a>
-		<ul class="submenu menu vertical" data-submenu>
-		  <li><a href="#">One</a></li>
-		  <li><a href="#">Two</a></li>
-		  <li><a href="#">Three</a></li>
-		</ul>
-	  </li>
-	  <li><a href="#">Two</a></li>
-	  <li><a href="#">Three</a></li>
-	</ul>
-  </div>
-</div>
-				<section class="row column">
-					<h1 class="site-title">
-						<a href="<?php esc_attr_e( home_url( '/' ) ); ?>" rel="home">
-							<?php bloginfo( 'name' ); ?>
-						</a>
-					</h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				</section>
-				<nav id="site-navigation" class="top-bar show-for-medium" data-topbar role="navigation">
-					<section class="top-bar-section row column">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					</section>
-				</nav><!-- #site-navigation -->
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

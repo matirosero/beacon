@@ -1,0 +1,13 @@
+.off-canvas,
+.top-bar {
+	a,
+	.close-button {
+		color: $white;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		@include hover {
+			color: $beacon-orange;
+		}
+	}
+}

@@ -14,8 +14,6 @@
 
 get_header(); ?>
 
-get_header(); ?>
-
 <div class="row column">
 
 	<div id="primary" class="content-area">
