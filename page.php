@@ -14,6 +14,8 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/content', 'hero' ); ?>
+
 <div class="row column">
 
 	<div id="primary" class="content-area">
