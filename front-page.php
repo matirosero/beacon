@@ -11,47 +11,45 @@ get_header(); ?>
 
 <div class="row column expanded small-collapse">
 
-		<header id="home-header">
-			Home header
-		</header>
+	<header id="home-header">
+		Home header
+	</header>
 
-		<div id="primary" class="content-area">
+	<div id="primary" class="content-area">
 
-			<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main">
 
-
-
-				<section id="home-how-help">
-					Como le podemos ayudar
-				</section>
-
-				<section id="home-test">
-					test
-				</section>
-
-				<section id="home-services">
-					Servicios
-				</section>
-
-				<section id="home-profiless">
-					Perfiles
-				</section>
 			<?php
-
-			$intro  = get_post_meta( get_the_ID(), 'frontpage_intro', true );
-			echo $intro;
 
 			if ( have_posts() ) :
 
-				while ( have_posts() ) :
+				while ( have_posts() ) : the_post(); ?>
 
-					the_post();
+					<section id="home-how-help">
+						<h2 class="section-title">Como le podemos ayudar</h2>
+						<?php
+						$intro  = get_post_meta( get_the_ID(), 'frontpage_intro', true );
+						echo $intro;
+						?>
+					</section>
 
-					get_template_part( 'template-parts/content', get_post_format() );
+					<?php /*
+					<section id="home-test">
+						test
+					</section>
+					*/ ?>
 
+					<section id="home-services">
+						<h2 class="section-title">Servicios</h2>
+						<?php the_content(); ?>
+					</section>
+
+					<section id="home-profiles">
+						Perfiles
+					</section>
+
+				<?php
 				endwhile;
-
-				the_posts_navigation();
 
 			else :
 
@@ -59,9 +57,9 @@ get_header(); ?>
 
 			endif; ?>
 
-			</main>
+		</main>
 
-		</div>
+	</div>
 
 
 </div>

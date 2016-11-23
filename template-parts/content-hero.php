@@ -11,7 +11,7 @@ if ( has_post_thumbnail( $post->ID ) ) :
 
 	// if ( empty( $xlarge_image ) && empty( $large_image ) && empty( $medium_image ) && empty( $small_image ) ) : ?>
 
-		<header id="featured-hero" role="banner" style="background-image: url('<?php echo $default_image ?>')">
+		<header id="featured-hero" class="small-12 column" role="banner" style="background-image: url('<?php echo $default_image ?>')">
 
 	<?php 
 	/*
@@ -66,32 +66,7 @@ if ( has_post_thumbnail( $post->ID ) ) :
 
 	<!-- <header id="featured-hero" role="banner" style="background-image: url('<?php echo $default_image ?>')"> -->
 
-		<?php if ( is_front_page() ) : ?>
 
-			<div class="hero-text">
-				<h1 class="page-title"><?php the_field( 'page_subtitle' ); ?></h1>
-				<div class="hero-signup hide-for-small-only">
-					<?php
-					if( function_exists( 'mc4wp_show_form' ) ) {
-					    echo '<p>'.get_field( 'home_hero_form_text').'</p>';
-					    mc4wp_show_form();
-					}
-					?>
-				</div>
-			</div>
-
-		<?php elseif ( is_page() ) : ?>
-			<!-- <div class="row"> -->
-				<!-- <div class="medium-5 medium-offset-1 columns"> -->
-			<div class="hero-text">
-				<?php
-					the_title( '<h1 class="page-title">', '</h1>' );
-				?>
-			</div>
-				<!-- </div> --><!-- .columns -->
-			<!-- </div> --><!-- .row -->
-
-		<?php endif; ?>
 
 	</header><!-- #featured-hero -->
 

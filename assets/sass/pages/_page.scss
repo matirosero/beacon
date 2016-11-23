@@ -5,9 +5,11 @@
 
 #primary,
 #secondary {
-	margin: 1rem 0;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 	@include breakpoint(medium) {
-		margin: 2rem 0;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
 	}
 }
 
