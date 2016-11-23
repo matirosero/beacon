@@ -1,5 +1,8 @@
 .top-bar {
     // padding: 0;
+    .menu-item-social > a > span {
+    	@include hide-for(medium);
+    }
 }
 .site-title {
 	padding: .2rem 1rem 0;

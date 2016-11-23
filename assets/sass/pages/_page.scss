@@ -3,6 +3,14 @@
 	// padding: 2rem 0;
 }
 
+#primary,
+#secondary {
+	margin: 1rem 0;
+	@include breakpoint(medium) {
+		margin: 2rem 0;
+	}
+}
+
 .entry-meta {
 	margin-bottom: 1.25rem;
 }

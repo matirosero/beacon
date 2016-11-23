@@ -39,6 +39,9 @@ add_action( 'wp_enqueue_scripts', function() {
 		true
 	);
 
+	//FontAwesome
+	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/44d4afc856.js', array(), '4.7.0', false );
+
 	// Add comment script on single posts with comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

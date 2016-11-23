@@ -68,13 +68,14 @@
 				<span aria-hidden="true">&times;</span>
 			</button>
 			<?php
-			 $args = array (
-				 'theme_location' 	=> 'primary',
-				 'container' 		=> 'nav',
-				 'container_class'	=> 'offcanvas-navigation',
-				 'menu_class' 		=> 'mobile-menu',
-			 );
-				wp_nav_menu( $args );
+				joints_off_canvas_nav();
+			 // $args = array (
+				//  'theme_location' 	=> 'primary',
+				//  'container' 		=> 'nav',
+				//  'container_class'	=> 'offcanvas-navigation',
+				//  'menu_class' 		=> 'mobile-menu',
+			 // );
+				// wp_nav_menu( $args );
 			?>
 		</div><!-- #offCanvasLeft -->
 		<div class="off-canvas-content" data-off-canvas-content>

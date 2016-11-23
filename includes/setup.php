@@ -70,6 +70,8 @@ add_action( 'after_setup_theme', function() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// add_theme_support('custom-logo');
 } );
 
 /**
