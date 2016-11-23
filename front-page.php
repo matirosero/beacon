@@ -9,13 +9,33 @@
 
 get_header(); ?>
 
-<div class="row">
+<div class="row column expanded small-collapse">
 
-	<div class="medium-8 medium-centered columns">
+		<header id="home-header">
+			Home header
+		</header>
 
 		<div id="primary" class="content-area">
 
 			<main id="main" class="site-main" role="main">
+
+
+
+				<section id="home-how-help">
+					Como le podemos ayudar
+				</section>
+
+				<section id="home-test">
+					test
+				</section>
+
+				<section id="home-services">
+					Servicios
+				</section>
+
+				<section id="home-profiless">
+					Perfiles
+				</section>
 			<?php
 
 			$intro  = get_post_meta( get_the_ID(), 'frontpage_intro', true );
@@ -43,7 +63,6 @@ get_header(); ?>
 
 		</div>
 
-	</div>
 
 </div>
 
