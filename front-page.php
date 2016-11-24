@@ -78,7 +78,6 @@ get_header(); ?>
 
 						$query = new WP_Query( $args );
 
-
 						$count = $query->post_count;
 
 						if ( $count == 2 ) :
