@@ -168,6 +168,7 @@ function beacon_register_repeatable_steps_field_metabox() {
 		'id'           => $prefix . 'metabox',
 		'title'        => esc_html__( 'Pasos del proceso de coaching', 'beacon' ),
 		'object_types' => array( 'page', ),
+		'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/coaching.php' ),
 	) );
 	// $group_field_id is the field id string, so in this case: $prefix . 'demo'
 	$group_field_id = $cmb_steps_group->add_field( array(
