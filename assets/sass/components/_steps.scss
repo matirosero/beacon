@@ -1,0 +1,112 @@
+.steps-wrap {
+  position: relative;
+}
+ul.steps-bar {
+
+  margin: 1rem 0 0 2.5rem;
+
+  li {
+    display: block;
+    padding: 0 0 1rem;
+    position: relative;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &:before {
+      background: $beacon-orange;
+      color: $white;
+      font-weight: bold;
+      border-radius: 50%;
+      left: -2.5rem;
+      line-height: 1.85rem;
+      height: 2rem;
+      position: absolute;
+      text-align: center;
+      width: 2rem;
+      z-index: 999;
+    }
+    &:nth-child(1) {
+      &:before {
+        content: "1";
+      }
+    }
+     &:nth-child(2) {
+      &:before {
+        content: "2";
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        content: "3";
+      }
+    }
+     &:nth-child(4) {
+      &:before {
+        content: "4";
+      }
+    }
+    &:nth-child(5) {
+      &:before {
+        content: "5";
+      }
+    }
+    &:nth-child(6) {
+      &:before {
+        content: "6";
+      }
+    }
+  }
+}
+
+
+
+@media all and (min-width: 900px) {
+
+  ul.steps-bar {
+    
+    margin: 3rem 0 0 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1.75rem;
+      height: 4px;
+      width: 100%;
+      background: $beacon-green;
+    }
+    li {
+      display: inline-block;
+      padding: 0;
+      padding: 0;
+      text-align: center;
+      width: 33%;
+      vertical-align:top;
+      padding: 0 map-get($grid-column-gutter, medium);
+      position:relative;
+      p {
+        text-align: left;
+        margin-top: 6rem;
+      }
+      &:before {
+         height: 45px;
+         left: 40%;
+         line-height: 3.25rem;
+         font-size: 1.75rem;
+         position: absolute;
+         top: 0;
+         width: 3.5rem;
+         height: 3.5rem;
+         z-index: 99;
+         padding:0;
+      }
+    }
+  }
+}
+
+@include breakpoint(large) {
+  ul.steps-bar li {
+    // padding: 0 map-get($grid-column-gutter, large);
+  }
+}

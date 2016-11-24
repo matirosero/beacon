@@ -11,7 +11,7 @@ if ( has_post_thumbnail( $post->ID ) ) :
 
 	// if ( empty( $xlarge_image ) && empty( $large_image ) && empty( $medium_image ) && empty( $small_image ) ) : ?>
 
-		<header id="featured-hero" class="small-12 column" role="banner" style="background-image: url('<?php echo $default_image ?>')">
+		<header id="featured-hero" class="" role="banner" style="background-image: url('<?php echo $default_image ?>')">
 
 	<?php 
 	/*
