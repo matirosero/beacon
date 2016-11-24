@@ -5,15 +5,15 @@
 body:not(.home):not(.page-template-coaching) {
 	#primary,
 	#secondary {
-		padding-bottom: 1rem;
-		padding-top: 1rem;
-		@include breakpoint(medium) {
-			padding-bottom: 2rem;
-			padding-top: 2rem;
-		}
-	}	
+		@include section-spacing;
+	}
 }
 
+.page-section {
+	border-bottom: 1px solid $light-gray;
+	// background: red;
+	@include section-spacing;
+}
 
 .entry-meta {
 	margin-bottom: 1.25rem;
