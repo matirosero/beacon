@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Beacon\n"
-"POT-Creation-Date: 2016-11-15 15:44-0600\n"
-"PO-Revision-Date: 2016-11-15 16:52-0600\n"
+"POT-Creation-Date: 2016-11-24 14:21-0600\n"
+"PO-Revision-Date: 2016-11-24 14:24-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -65,9 +65,143 @@ msgstr "Comentarios más recientes"
 msgid "Comments are closed."
 msgstr "Comentarios cerrados."
 
-#: includes/setup.php:41
-msgid "Primary Menu"
-msgstr "Menú principal"
+#: includes/cmb2.php:68
+msgid "Frontpage options"
+msgstr "Opciones del home"
+
+#: includes/cmb2.php:85
+msgid "Los diferentes estados del encabezado, con sus respectivos textos."
+msgstr ""
+
+#: includes/cmb2.php:87
+msgid "Estado {#}"
+msgstr ""
+
+#: includes/cmb2.php:88
+msgid "Add Another State"
+msgstr "Añadir estado"
+
+#: includes/cmb2.php:89
+msgid "Remove State"
+msgstr "Eliminar estado"
+
+#: includes/cmb2.php:102
+msgid "Imagen"
+msgstr ""
+
+#: includes/cmb2.php:108
+msgid "Texto"
+msgstr ""
+
+#: includes/cmb2.php:109
+msgid "Texto que acompaña a la imagen"
+msgstr ""
+
+#: includes/cmb2.php:115
+msgid "Imagen a pantalla completa?"
+msgstr ""
+
+#: includes/cmb2.php:116
+msgid "(La primera imagen debe ser pantalla completa)"
+msgstr ""
+
+#: includes/cmb2.php:127
+msgid "Cómo podemos ayudarle"
+msgstr ""
+
+#: includes/cmb2.php:128
+msgid "Texto que está debajo del encabezado"
+msgstr ""
+
+#: includes/cmb2.php:134
+msgid "Servicios"
+msgstr ""
+
+#: includes/cmb2.php:135
+msgid "Texto servicios"
+msgstr ""
+
+#: includes/cmb2.php:142
+msgid "Mostrar..."
+msgstr ""
+
+#: includes/cmb2.php:143
+msgid "Marque si quiere que aparezcan"
+msgstr ""
+
+#: includes/cmb2.php:148
+msgid "Enlace al test"
+msgstr ""
+
+#: includes/cmb2.php:149
+msgid "Perfiles"
+msgstr ""
+
+#: includes/cmb2.php:150
+msgid "Eventos"
+msgstr ""
+
+#: includes/cmb2.php:169
+msgid "Pasos del proceso de coaching"
+msgstr ""
+
+#: includes/cmb2.php:177
+msgid "Añada y describa los pasos."
+msgstr ""
+
+#: includes/cmb2.php:179
+msgid "Paso {#}"
+msgstr ""
+
+#: includes/cmb2.php:180
+msgid "Add Another Step"
+msgstr "Añadir paso"
+
+#: includes/cmb2.php:181
+msgid "Remove Step"
+msgstr "Eliminar paso"
+
+#: includes/cmb2.php:194
+msgid "Description"
+msgstr "Descripción"
+
+#: includes/cmb2.php:195
+msgid "Write a short description for this entry"
+msgstr "Escriba una descripción corta"
+
+#: includes/cpt.php:32
+msgid "Profile"
+msgstr "Perfil"
+
+#: includes/cpt.php:33
+msgid "Profiles"
+msgstr "Perfiles"
+
+#: includes/cpt.php:54
+#, php-format
+msgid "%s Headshot"
+msgstr "%s retrato"
+
+#: includes/customizer.php:18
+msgid "Social Media Icons"
+msgstr "Iconos de redes sociales"
+
+#: includes/customizer.php:106
+msgid "email icon"
+msgstr ""
+
+#: includes/customizer.php:112
+#, php-format
+msgid "%s icon"
+msgstr "%s ícono"
+
+#: includes/menu.php:12
+msgid "The Main Menu"
+msgstr "El menú principal"
+
+#: includes/menu.php:13 includes/menu.php:62
+msgid "Footer Links"
+msgstr "Enlaces del pie"
 
 #: includes/sidebars.php:11
 msgid "Sidebar"
@@ -158,6 +292,11 @@ msgstr "Páginas:"
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Seguir leyendo %s <span class=\"meta-nav\">&rarr;</span>"
 
+#: template-parts/nav-offcanvas-topbar.php:16
+#: template-parts/nav-offcanvas.php:10
+msgid "Menu"
+msgstr ""
+
 #. Theme Name of the plugin/theme
 msgid "Beacon"
 msgstr ""
@@ -177,3 +316,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://matilderosero.com"
 msgstr ""
+
+#~ msgid "Primary Menu"
+#~ msgstr "Menú principal"
