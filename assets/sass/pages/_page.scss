@@ -2,16 +2,18 @@
 	margin: 0;
 	// padding: 2rem 0;
 }
-
-#primary,
-#secondary {
-	padding-bottom: 1rem;
-	padding-top: 1rem;
-	@include breakpoint(medium) {
-		padding-bottom: 2rem;
-		padding-top: 2rem;
-	}
+body:not(.page-template-coaching) {
+	#primary,
+	#secondary {
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		@include breakpoint(medium) {
+			padding-bottom: 2rem;
+			padding-top: 2rem;
+		}
+	}	
 }
+
 
 .entry-meta {
 	margin-bottom: 1.25rem;

@@ -15,13 +15,18 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 2rem;
+	// font-size: 2rem;
 	font-weight: 700;
 }
 
 h2 {
-	font-size: 1.25rem;
+	// font-size: 1.25rem;
 	font-weight: 700;
+}
+
+.entry-title,
+.section-title {
+	color: $beacon-orange;
 }
 
 .top-bar,
