@@ -9,7 +9,7 @@ body:not(.home):not(.page-template-coaching) {
 	}
 }
 
-.page-section {
+.page-section:not(#home-profiles) {
 	border-bottom: 1px solid $light-gray;
 	// background: red;
 	@include section-spacing;

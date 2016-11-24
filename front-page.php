@@ -24,12 +24,11 @@ get_header(); ?>
 		<section id="home-how-help" class="page-section">
 			<div class="row">
 				<div class="medium-4 columns">
-					<h2 class="section-title">Como le podemos ayudar</h2>
+					<h2 class="section-title">¿Cómo le podemos ayudar?</h2>
 				</div>
-				<div class="medium-8 columns">
+				<div class="medium-8 columns entry-content">
 					<?php
-					$intro  = get_post_meta( get_the_ID(), 'frontpage_intro', true );
-					echo $intro;
+					echo wpautop( get_post_meta( get_the_ID(), 'frontpage_intro', true ) );
 					?>
 				</div>
 			</div>
@@ -46,11 +45,10 @@ get_header(); ?>
 				<div class="medium-4 columns">
 					<h2 class="section-title">Servicios</h2>
 				</div>
-				<div class="medium-8 columns">
+				<div class="medium-8 columns entry-content">
 					<?php //the_content(); ?>
 					<?php
-					$services  = get_post_meta( get_the_ID(), 'frontpage_services', true );
-					echo $services;
+					echo wpautop( get_post_meta( get_the_ID(), 'frontpage_services', true ) );
 					?>
 				</div>
 			</div>
@@ -69,7 +67,7 @@ get_header(); ?>
 				// 'post_status' => 'publish',
 
 				//Order & Orderby Parameters
-				'order'               => 'DESC',
+				'order'               => 'ASC',
 				// 'orderby'             => 'date',
 
 				//Pagination Parameters
@@ -89,7 +87,7 @@ get_header(); ?>
 
 		if ( $count == 2 ) : ?>
 
-			<section id="home-profiles" class="page-section row column expanded">
+			<section id="home-profiles" class="page-section row expanded">
 
 				<?php
 
@@ -99,32 +97,41 @@ get_header(); ?>
 					$i = ! isset( $i ) ? 1 : $i;
 
 					// Does this post count odd?
-					$odd = $i % 2; // 1/0
+					// $odd = $i % 2; // 1/0
 
 					$title = get_the_title(); // This must be!, because this is the return - the_title would be echo
 					$title_array = explode(' ', $title);
 					$firstname = $title_array[0];
 
+					if ( $i == 1 ) : ?>
+
+						<article class="home-profile-img large-4 large-push-4 columns">
+							&nbsp;
+						</article>
+
+						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 large-pull-4 columns'); ?>>
+
+					<?php else: ?>
+
+						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 columns'); ?>>
+
+					<?php endif;
 					?>
 
-					<div class="medium-6 columns">
-
-						<?php
-
-						if ($odd) :
-							echo 'odd';
-						else:
-							echo 'even';
-						endif;
 
 
-						echo '¡Hola! Yo soy '.$firstname;
-						the_excerpt();
-						?>
+						<div class="eq-container" style="padding:1rem 0">
+							<?php
+							echo '<p class="lead">¡Hola! Yo soy '.$firstname.'</p>';
+							the_excerpt();
+							?>
+						</div>
 
-					</div>
+					</article>
 
 					<?php
+
+
 
 					// Count up.
 					$i++;

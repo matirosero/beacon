@@ -1,0 +1,11 @@
+.profile {
+	color: $white;
+
+	.home & {
+		background-color: transparent;
+
+		&:first-of-type {
+			background-color: $beacon-green;
+		}
+	}
+}

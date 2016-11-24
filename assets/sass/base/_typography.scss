@@ -10,8 +10,9 @@ p {
 	margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	text-transform: uppercase;
+	color: $beacon-orange;
 }
 
 h1 {
@@ -24,9 +25,18 @@ h2 {
 	font-weight: 700;
 }
 
+h3 {
+	.home & {
+		font-size: 23px;
+	}
+}
+
 .entry-title,
 .section-title {
 	color: $beacon-orange;
+	.home & {
+		text-align: center;
+	}
 }
 
 .top-bar,
