@@ -3,15 +3,17 @@ var	gulp			= require('gulp'),
 	sass			= require('gulp-sass'),  // Our sass compiler
 	notify			= require('gulp-notify'), // Basic gulp notificatin using OS
 	sourcemaps		= require('gulp-sourcemaps'), // Sass sourcemaps
-	autoprefixer		= require('gulp-autoprefixer'), // Adds vendor prefixes for us
+	autoprefixer	= require('gulp-autoprefixer'), // Adds vendor prefixes for us
 	svgSprite		= require('gulp-svg-sprite'),
 	svgmin 			= require('gulp-svgmin'),
 	size			= require('gulp-size'),
+	imagemin 		= require('gulp-imagemin'), //MRo
+	cache 			= require('gulp-cache'), //MRo
 	browserSync		= require('browser-sync'), // Sends php, js, and css updates to browser for us
 	concat			= require('gulp-concat'), // Concat our js
 	uglify			= require('gulp-uglify'),
 	babel			= require('gulp-babel'),
-	del			= require('del');
+	del				= require('del');
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -79,6 +81,20 @@ gulp.task('svg-sprite', ['svg-min'], function() {
     .pipe(gulp.dest(paths.destPath))
 		.pipe(browserSync.reload({stream:true}))
 		.pipe(notify({ message: "SVG Sprite task complete"}));
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Optimize Images Task (MRo)
+////////////////////////////////////////////////////////////////////////////////
+
+gulp.task('images', function(){
+  return gulp.src(paths.imgPath + '**/*.+(png|jpg|gif)')
+  // Caching images that ran through imagemin
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest(paths.destPath + 'img'))
 });
 
 
