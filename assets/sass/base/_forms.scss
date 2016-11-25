@@ -1,0 +1,40 @@
+textarea[rows] {
+    height: 7rem;
+}
+
+input[type="text"]:disabled {
+    display: none;
+}
+
+.wpcf7-checkbox {
+	span.wpcf7-list-item {
+	    margin-left: 0; 
+
+	    @include breakpoint(medium) {
+		    margin-right: 1rem;
+		    label {
+		    	display: inline-block;
+		    }
+		    &.last label {
+		    	display: block;
+		    }
+		    .wpcf7-free-text {
+				width: auto
+			}
+	    }
+	}
+}
+
+
+
+#appointment-form {
+	form {
+		margin: 1rem 0 0;
+		@include breakpoint(medium) {
+			margin: 2rem 0 0;
+		}
+	}
+	label {
+		color: $white;
+	}
+}

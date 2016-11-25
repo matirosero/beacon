@@ -1,4 +1,17 @@
+.button {
+	@include box-shadow-hover;
+}
+
 input[type="submit"],
 input[type="button"] {
   @include button;
+  font-weight: bold;
+  @include box-shadow-hover;
+
+  #appointment-form & {
+  	background-color: $beacon-orange;
+	@include hover {
+		background-color: scale-color($beacon-orange, $lightness: -15%);
+	}
+  }
 }
