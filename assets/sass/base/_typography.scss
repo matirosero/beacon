@@ -42,6 +42,32 @@ h3 {
 	}
 }
 
+
+.page-template-coaching {
+	.entry-title {
+		margin-top:1rem;
+	}
+	.coaching-benefits {
+		list-style: none;
+		li {
+			position: relative;
+			&:before {
+				color: $beacon-orange;
+				content: "\f00c";
+				font: normal normal normal 14px/1 FontAwesome;
+			    font-size: inherit;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+
+			    position: absolute;
+			    left: -1.25rem;
+			    top: .35rem;
+			}
+		}
+
+	}
+}
+
 .top-bar,
 .off-canvas {
 	font-size: $small-font-size;

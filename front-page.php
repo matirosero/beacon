@@ -25,7 +25,6 @@ get_header(); ?>
 			<div class="row">
 				<div class="medium-4 columns">
 					<h2 class="section-title">¿Cómo le podemos ayudar?</h2>
-					<a class="button">lalalalala</a>
 				</div>
 				<div class="medium-8 columns entry-content">
 					<?php

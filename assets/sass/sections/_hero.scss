@@ -2,4 +2,10 @@
 	height: 60vh;
 	max-height: 100vw;
 	background-size: cover;
+
+	@include breakpoint(small only) {
+		max-height: 47vw;
+		padding-top: 47vw;
+		background-color: $beacon-green;
+	}
 }

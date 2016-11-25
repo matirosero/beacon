@@ -66,6 +66,26 @@ if ( has_post_thumbnail( $post->ID ) ) :
 
 	<!-- <header id="featured-hero" role="banner" style="background-image: url('<?php echo $default_image ?>')"> -->
 
+		<?php if ( is_page_template( 'page-templates/coaching.php' ) ) { ?>
+			<div class="row">
+				<div class="medium-7 medium-offset-5 columns">
+					<h1 class="entry-title">
+						Beneficios del Coaching
+					</h1>
+					<ul class="coaching-benefits">
+						<li>Crecer en la conciencia de sí mismo</li>
+						<li>Identificar sus valores y su visión del futuro</li>
+						<li>Desarrollar objetivos y los planes de acción para alcanzarlos</li>
+						<li>Sentirse más confiado y optimista</li>
+						<li>Identificar los obstáculos y cómo vencerlos</li>
+						<li>Claridad para tomar mejores decisiones</li>
+						<li>Avanzar hacia el cumplimiento de las metas</li>
+						<li>Generar una transformación que le permita obtener resultados</li>
+						<li>Devolverle a la vida balance, energía, enfoque, pasión y creatividad</li>
+					</ul>
+				</div>
+			</div>
+		<?php } ?>
 
 
 	</header><!-- #featured-hero -->
