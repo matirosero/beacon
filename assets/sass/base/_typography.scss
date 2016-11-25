@@ -46,6 +46,9 @@ h3 {
 .page-template-coaching {
 	.entry-title {
 		margin-top:1rem;
+		@include breakpoint(medium only) {
+			font-size: 31px;
+		}
 	}
 	.coaching-benefits {
 		list-style: none;
