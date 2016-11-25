@@ -11,3 +11,13 @@
 		}
 	}
 }
+
+#contact-sidebar {
+	a {
+		color: $white;
+
+		@include hover {
+			color: $white;
+		}
+	}
+}

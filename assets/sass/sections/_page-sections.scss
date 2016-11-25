@@ -23,3 +23,7 @@
 		background-image: url('../img/form-bg-1920.jpg');
 	}
 }
+
+#contact-form, #contact-sidebar {
+	@include section-spacing;
+}

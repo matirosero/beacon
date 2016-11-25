@@ -4,6 +4,12 @@
 }
 
 #contact-sidebar {
-	background: $beacon-orange;
+	background-image: url('../img/sidebar-bg-small.jpg');
+	background-size: cover;
+	background-position-y: top;
+	background-position-x: center;
 	color: $white;
+	@include breakpoint(medium) {
+		background-image: url('../img/sidebar-bg.jpg');
+	}
 }

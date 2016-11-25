@@ -16,6 +16,7 @@ h1, h2, h3 {
 	#contact-sidebar & {
 		color: $white;
 		font-size: 19px;
+		margin-bottom: 1.25rem;
 		@include breakpoint(medium) {
 			font-size: 22px;
 		}
@@ -83,6 +84,10 @@ h3 {
 
 #contact-sidebar {
 	color: $white;
+	ul {
+		list-style: none;
+		margin-left: 0;
+	}
 	@include breakpoint(medium) {
 		text-align: right;
 	}
