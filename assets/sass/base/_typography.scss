@@ -13,6 +13,16 @@ p {
 h1, h2, h3 {
 	text-transform: uppercase;
 	color: $beacon-orange;
+	#contact-sidebar & {
+		color: $white;
+		font-size: 19px;
+		@include breakpoint(medium) {
+			font-size: 22px;
+		}
+		@include breakpoint(large) {
+			font-size: 23px;
+		}
+	}
 }
 
 h1 {
@@ -69,6 +79,14 @@ h3 {
 		}
 
 	}
+}
+
+#contact-sidebar {
+	color: $white;
+	@include breakpoint(medium) {
+		text-align: right;
+	}
+
 }
 
 .top-bar,

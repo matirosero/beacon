@@ -2,7 +2,7 @@
 	margin: 0;
 	// padding: 2rem 0;
 }
-body:not(.home):not(.page-template-coaching) {
+body:not(.home):not(.page-template-coaching):not(.page-template-contact) {
 	#primary,
 	#secondary {
 		@include section-spacing;

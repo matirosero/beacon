@@ -198,3 +198,91 @@ function beacon_register_repeatable_steps_field_metabox() {
 	) );
 
 }
+
+
+
+
+add_action( 'cmb2_admin_init', 'beacon_register_repeatable_contact_field_metabox' );
+/**
+ * Hook in and add a metabox to demonstrate repeatable grouped fields
+ */
+function beacon_register_repeatable_contact_field_metabox() {
+	$prefix = 'contact_';
+	/**
+	 * Repeatable Field Groups
+	 */
+	$cmb_contact_group = new_cmb2_box( array(
+		'id'           => $prefix . 'metabox',
+		'title'        => esc_html__( 'Formas de contact', 'beacon' ),
+		'object_types' => array( 'page', ),
+		'show_on'      => array( 'key' => 'page-template', 'value' => 'page-templates/contact.php' ),
+	) );
+	// $group_field_id is the field id string, so in this case: $prefix . 'demo'
+	$group_field_email = $cmb_contact_group->add_field( array(
+		'id'          => $prefix . 'emails',
+		'type'        => 'group',
+		// 'description' => esc_html__( 'Añada y describa los pasos.', 'beacon' ),
+		'options'     => array(
+			'group_title'   => esc_html__( 'Email {#}', 'beacon' ), // {#} gets replaced by row number
+			'add_button'    => esc_html__( 'Add Another Email', 'beacon' ),
+			'remove_button' => esc_html__( 'Remove Email', 'beacon' ),
+			'sortable'      => true, // beta
+			// 'closed'     => true, // true to have the groups closed by default
+		),
+	) );
+	/**
+	 * Group fields works the same, except ids only need
+	 * to be unique to the group. Prefix is not needed.
+	 *
+	 * The parent field's id needs to be passed as the first argument.
+	 */
+
+	$cmb_contact_group->add_group_field( $group_field_email, array(
+		'name'        => esc_html__( 'Email', 'beacon' ),
+		// 'description' => esc_html__( 'Write a short description for this entry', 'cmb2' ),
+		'id'          => 'email',
+		'type'        => 'text_email',
+	) );
+
+
+
+	$group_field_phone = $cmb_contact_group->add_field( array(
+		'id'          => $prefix . 'phones',
+		'type'        => 'group',
+		// 'description' => esc_html__( 'Añada y describa los pasos.', 'beacon' ),
+		'options'     => array(
+			'group_title'   => esc_html__( 'Phone {#}', 'beacon' ), // {#} gets replaced by row number
+			'add_button'    => esc_html__( 'Add Another Phone', 'beacon' ),
+			'remove_button' => esc_html__( 'Remove Phone', 'beacon' ),
+			'sortable'      => true, // beta
+			// 'closed'     => true, // true to have the groups closed by default
+		),
+	) );
+	$cmb_contact_group->add_group_field( $group_field_phone, array(
+		'name'        => esc_html__( 'Phone number', 'beacon' ),
+		// 'description' => esc_html__( 'Write a short description for this entry', 'cmb2' ),
+		'id'          => 'phone',
+		'type'        => 'text',
+	) );
+
+
+
+	$group_field_skype = $cmb_contact_group->add_field( array(
+		'id'          => $prefix . 'skype',
+		'type'        => 'group',
+		// 'description' => esc_html__( 'Añada y describa los pasos.', 'beacon' ),
+		'options'     => array(
+			'group_title'   => esc_html__( 'Skype {#}', 'beacon' ), // {#} gets replaced by row number
+			'add_button'    => esc_html__( 'Add Another Skype', 'beacon' ),
+			'remove_button' => esc_html__( 'Remove Skype', 'beacon' ),
+			'sortable'      => true, // beta
+			// 'closed'     => true, // true to have the groups closed by default
+		),
+	) );
+	$cmb_contact_group->add_group_field( $group_field_skype, array(
+		'name'        => esc_html__( 'Skype username', 'beacon' ),
+		// 'description' => esc_html__( 'Write a short description for this entry', 'cmb2' ),
+		'id'          => 'skype',
+		'type'        => 'text',
+	) );
+}
