@@ -1,3 +1,37 @@
+#home-header {
+	height: 60vh;
+	max-height: 100vw;
+	background-color: $black;
+	background-image: url('../img/home-header-1-700.jpg');
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center; //vertical
+	position: relative;
+
+	@include breakpoint(small only) {
+		max-height: 47vw;
+		padding-top: 47vw;
+	}
+
+	@include breakpoint(medium) {
+		background-image: url('../img/home-header-1-1024.jpg');
+	}
+
+	@include breakpoint(large) {
+		background-image: url('../img/home-header-1-1200.jpg');
+	}
+
+	@include breakpoint(xlarge) {
+		background-image: url('../img/home-header-1-1440.jpg');
+	}
+
+	@include breakpoint(xxlarge) {
+		background-image: url('../img/home-header-1-1920.jpg');
+	}
+
+
+}
+
 #home-profiles {
 	background: $beacon-orange;
 }
