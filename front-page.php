@@ -25,6 +25,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="medium-4 columns">
 					<h2 class="section-title">¿Cómo le podemos ayudar?</h2>
+					<p class="text-center"><a class="button" href="<?php echo get_page_link(10); ?>">Beneficios del coaching</a></p>
 				</div>
 				<div class="medium-8 columns entry-content">
 					<?php
@@ -44,6 +45,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="medium-4 columns">
 					<h2 class="section-title">Servicios</h2>
+					<p class="text-center"><a class="button" href="<?php echo get_page_link(10); ?>#coaching-steps">Conozca los pasos del proceso</a></p>
 				</div>
 				<div class="medium-8 columns entry-content">
 					<?php //the_content(); ?>
