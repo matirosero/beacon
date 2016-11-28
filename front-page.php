@@ -10,7 +10,13 @@
 get_header(); ?>
 
 <header id="home-header">
-	Home header
+	<div id="home-header-text" class="row expanded">
+		<div class="medium-8 end columns">
+			<h2>¿Quiere hacer un cambio en su vida pero necesita el impulso para lograrlo?</h2>
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/svg/logo-beacon-hero.svg" alt="<?php bloginfo( 'name' ); ?>" />
+			<p class="text-center"><a class="button" href="<?php echo get_page_link(10); ?>#appointment-form">Agende aquí su SESIÓN GRATUITA</a></p>
+		</div>
+	</div>
 </header>
 
 <div id="primary" class="content-area">
