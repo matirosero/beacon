@@ -24,6 +24,7 @@ h1, h2, h3 {
 			font-size: 23px;
 		}
 	}
+
 }
 
 h1 {
@@ -39,6 +40,18 @@ h2 {
 h3 {
 	.home & {
 		font-size: 23px;
+	}
+}
+
+.home-hero-title {
+	color: $white;
+	font-weight: normal;
+	text-transform: none;
+	@include breakpoint(small only) {
+		font-size: 20px;
+	}
+	@include breakpoint(medium) {
+		@include text-shadow();
 	}
 }
 

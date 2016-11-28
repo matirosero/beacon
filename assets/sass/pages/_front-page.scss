@@ -1,24 +1,70 @@
 #home-header {
-	height: 60vh;
-	max-height: 100vw;
+
 	background-color: $black;
 	background-image: url('../img/home-header-1-700.jpg');
 	background-size: cover;
 	background-position-x: center;
-	background-position-y: center; //vertical
+	background-position-y: top; //vertical
 	position: relative;
+	text-align: center;
+
+	#home-header-text {
+		position: relative;
+		height: 100%;		
+	}
+
 
 	@include breakpoint(small only) {
-		max-height: 47vw;
-		padding-top: 47vw;
+		height: 75vh;
+		max-height: 100vw;
+		.home-hero-title {
+			position: absolute;
+			padding: 0 25% 0 25px;
+			top: .75rem;
+			width:100%;
+			text-align: left;
+		}
+		.home-hero-logo {
+			max-width: 60%;
+			margin: 0 auto 1rem;
+			width: 100%;
+			position: absolute;
+			bottom: 25vw;
+			left: 20%;
+		}
+
+		.home-header-cta {
+			position: absolute;
+			bottom: 0;
+			padding: 0 25px;
+			width: 100%;
+		}
+
 	}
 
 	@include breakpoint(medium) {
+		min-height: 75vh;
+		// max-height: 100vw;
 		background-image: url('../img/home-header-1-1024.jpg');
+		// background-position-y: center;
+
+		#home-header-text {
+			padding-top: 5vw;
+		}
+		.home-hero-title {
+			margin-bottom: 3rem;
+		}
+		.home-hero-logo {
+			margin-bottom: 1rem;
+		}
 	}
 
 	@include breakpoint(large) {
 		background-image: url('../img/home-header-1-1200.jpg');
+
+		#home-header-text {
+			padding-top: 7vw;
+		}
 	}
 
 	@include breakpoint(xlarge) {
@@ -28,8 +74,14 @@
 	@include breakpoint(xxlarge) {
 		background-image: url('../img/home-header-1-1920.jpg');
 	}
+}
 
-
+.home #main .page-section:first-of-type {
+	@include breakpoint(small only) {
+		.section-title {
+			margin-top: 1rem;
+		}
+	}
 }
 
 #home-profiles {

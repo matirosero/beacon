@@ -1,5 +1,7 @@
 .button {
 	@include box-shadow-hover;
+	font-weight: bold;
+  line-height: 1.25;
 }
 
 input[type="submit"],
