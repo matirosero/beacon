@@ -85,5 +85,15 @@
 }
 
 #home-profiles {
-	background: $beacon-orange;
+	background: $beacon-green;
+	.profile:last-child {
+		// background: $beacon-green;
+	}
+}
+
+.home-profile-img {
+	padding-top: 50%;
+	height: 0;
+	background-image: url('../img/home-profiles-700.jpg');
+	background-size:cover;
 }

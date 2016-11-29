@@ -115,11 +115,9 @@ get_header(); ?>
 
 					if ( $i == 1 ) : ?>
 
-						<article class="home-profile-img large-4 large-push-4 columns">
-							&nbsp;
-						</article>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 large-pull-4 columns'); ?>>
+
+						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 columns'); ?>>
 
 					<?php else: ?>
 
@@ -137,11 +135,18 @@ get_header(); ?>
 							?>
 						</div>
 
-					</article>
+					
 
 					<?php
-
-
+					if ( $i == 1 ) : ?>
+						</article>
+						<div class="home-profile-img large-4 columns">
+							&nbsp;
+						</div>						
+					<?php else: ?>
+						</article>
+					<?php endif;
+					
 
 					// Count up.
 					$i++;
