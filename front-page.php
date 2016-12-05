@@ -115,13 +115,11 @@ get_header(); ?>
 
 					if ( $i == 1 ) : ?>
 
-
-
-						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 columns'); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-8 large-4 columns'); ?>>
 
 					<?php else: ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-6 large-4 columns'); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-8 large-4 columns'); ?>>
 
 					<?php endif;
 					?>
@@ -140,7 +138,7 @@ get_header(); ?>
 					<?php
 					if ( $i == 1 ) : ?>
 						</article>
-						<div class="home-profile-img large-4 columns">
+						<div class="home-profile-img large-4 columns hide-for-medium-only">
 							&nbsp;
 						</div>						
 					<?php else: ?>

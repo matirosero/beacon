@@ -96,4 +96,9 @@
 	height: 0;
 	background-image: url('../img/home-profiles-700.jpg');
 	background-size:cover;
+
+	@include breakpoint(medium) {
+		padding-top: 40%;
+		background-image: url('../img/home-profiles-1024.jpg');
+	}
 }
