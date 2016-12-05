@@ -6,7 +6,8 @@ if ( has_post_thumbnail( $post->ID ) ) :
 
 	?>
 
-	<header id="featured-hero" class="" role="banner" style="background-image: url('<?php echo $default_image ?>')">
+	<!-- <header id="featured-hero" class="" role="banner" style="background-image: url('<?php echo $default_image ?>')"> -->
+	<header id="featured-hero" class="" role="banner">
 
 		<?php if ( is_page_template( 'page-templates/coaching.php' ) ) { ?>
 			<div class="row">

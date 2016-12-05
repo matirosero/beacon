@@ -11,6 +11,16 @@
 		background-color: $beacon-green;
 	}
 
+	.page-template-coaching & {
+		background-image: url('../img/bg-coaching-700.jpg');
+		@include breakpoint(medium) {
+			background-image: url('../img/bg-coaching-1024.jpg');
+		}
+		@include breakpoint(large) {
+			background-image: url('../img/bg-coaching-1920.jpg');
+		}
+	}
+
 
 }
 
