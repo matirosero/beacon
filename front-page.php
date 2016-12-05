@@ -97,7 +97,7 @@ get_header(); ?>
 
 		if ( $count == 2 ) : ?>
 
-			<section id="home-profiles" class="page-section row expanded" data-equalizer data-equalize-on="medium">
+			<section id="home-profiles" class="page-section row expanded" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
 
 				<?php
 
@@ -115,30 +115,32 @@ get_header(); ?>
 
 					if ( $i == 1 ) : ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-8 large-4 columns'); ?>>
+						<!-- <div class="home-profile-img medium-12 columns show-for-medium-only" >&nbsp;</div> -->
+
+						<article id="post-<?php the_ID(); ?>" <?php post_class('large-4 columns'); ?> data-equalizer-watch>
 
 					<?php else: ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class('medium-8 large-4 columns'); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class('large-4 columns'); ?> data-equalizer-watch>
 
 					<?php endif;
 					?>
 
 
 
-						<div class="eq-container" style="padding:1rem 0" data-equalizer-watch>
+						<!-- <div class="eq-container" style="padding:1rem 0" data-equalizer-watch> -->
 							<?php
 							echo '<p class="lead">¡Hola! Yo soy '.$firstname.'</p>';
 							the_excerpt();
 							?>
-						</div>
+						<!-- </div> -->
 
 
 
 					<?php
 					if ( $i == 1 ) : ?>
 						</article>
-						<div class="home-profile-img large-4 columns hide-for-medium-only" data-equalizer-watch>
+						<div class="home-profile-img large-4 columns" data-equalizer-watch>
 							&nbsp;
 						</div>
 					<?php else: ?>
