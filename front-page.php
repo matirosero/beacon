@@ -97,7 +97,7 @@ get_header(); ?>
 
 		if ( $count == 2 ) : ?>
 
-			<section id="home-profiles" class="page-section row expanded">
+			<section id="home-profiles" class="page-section row expanded" data-equalizer data-equalize-on="medium">
 
 				<?php
 
@@ -126,25 +126,25 @@ get_header(); ?>
 
 
 
-						<div class="eq-container" style="padding:1rem 0">
+						<div class="eq-container" style="padding:1rem 0" data-equalizer-watch>
 							<?php
 							echo '<p class="lead">¡Hola! Yo soy '.$firstname.'</p>';
 							the_excerpt();
 							?>
 						</div>
 
-					
+
 
 					<?php
 					if ( $i == 1 ) : ?>
 						</article>
-						<div class="home-profile-img large-4 columns hide-for-medium-only">
+						<div class="home-profile-img large-4 columns hide-for-medium-only" data-equalizer-watch>
 							&nbsp;
-						</div>						
+						</div>
 					<?php else: ?>
 						</article>
 					<?php endif;
-					
+
 
 					// Count up.
 					$i++;
