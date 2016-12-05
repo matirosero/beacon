@@ -3,6 +3,8 @@
 
 	.home & {
 		background-color: transparent;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
 
 		&:first-of-type {
 			background-color: $beacon-orange;

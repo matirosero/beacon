@@ -97,7 +97,7 @@ get_header(); ?>
 
 		if ( $count == 2 ) : ?>
 
-			<section id="home-profiles" class="page-section row expanded" data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
+			<section id="home-profiles" class="page-section row expanded" data-equalizer data-equalize-on="large" data-equalize-by-row="true">
 
 				<?php
 
