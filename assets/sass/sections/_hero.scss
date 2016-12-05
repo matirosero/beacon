@@ -13,3 +13,11 @@
 
 
 }
+
+.hero-container {
+	.page-template-coaching & {
+		@include breakpoint(medium) {
+			padding-top: 1rem;
+		}
+	}
+}
