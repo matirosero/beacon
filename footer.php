@@ -24,7 +24,8 @@
 
 					<p class="text-center">
 						&copy; <?php echo date("Y"); ?> <?php echo get_bloginfo( 'name' ); ?>, todos los derechos reservados
-						<br />
+					</p>
+					<p class="text-center footer-credits">
 						Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a> | Mercadeo: <a href="mailto:michelle.morera@gmail.com">Michelle Morera</a>
 					</p>
 
