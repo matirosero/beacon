@@ -26,7 +26,7 @@
 						&copy; <?php echo date("Y"); ?> <?php echo get_bloginfo( 'name' ); ?>, todos los derechos reservados
 					</p>
 					<p class="text-center footer-credits">
-						Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a> | Mercadeo: <a href="mailto:michelle.morera@gmail.com">Michelle Morera</a>
+						Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a> | Contenido: <a href="mailto:michelle.morera@gmail.com">Michelle Morera</a>
 					</p>
 
 				</div><!-- .column.row -->
