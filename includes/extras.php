@@ -84,3 +84,10 @@ function beacon_wp_nav_menu_items( $items, $args, $ajax = false ) {
 
 	return $items;
 }
+
+// Move Yoast Meta Box to bottom
+function yoasttobottom() {
+	return 'low';
+}
+
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
