@@ -1,0 +1,15 @@
+.post {
+	margin-bottom: 2rem;
+	.post-thumbnail {
+		display: block;
+		margin-bottom: 1rem;
+	}
+	@include breakpoint(medium) {
+		margin-bottom: 3rem;
+	}
+}
+
+.entry-meta,
+.entry-footer {
+	font-size: $small-font-size;
+}

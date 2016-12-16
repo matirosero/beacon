@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="row">
 
-	<div class="medium-8 columns">
+	<div class="medium-8 large-7 large-offset-1 columns">
 
 		<div id="primary" class="content-area">
 
@@ -23,9 +23,9 @@ get_header(); ?>
 				<?php
 				if ( have_posts() ) :
 
-					if ( is_home() && ! is_front_page() ) : ?>
+					if ( is_home() && !is_front_page() ) : ?>
 						<header>
-							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+							<h1 class="page-title"><?php single_post_title(); ?></h1>
 						</header>
 					<?php
 					endif;
@@ -52,7 +52,7 @@ get_header(); ?>
 
 	</div>
 
-	<div class="medium-4 columns">
+	<div class="medium-4 large-3 end columns">
 
 		<?php get_sidebar(); ?>
 
