@@ -1,5 +1,7 @@
 #secondary {
+	background-color: $beacon-orange;
 	font-size: $small-font-size;
+	color: $white;
 	h2 {
 		font-size: 19px;
 		@include breakpoint(medium) {

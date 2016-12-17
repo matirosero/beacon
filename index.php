@@ -13,52 +13,55 @@
 
 get_header(); ?>
 
-<div class="row">
+<div id="primary" class="content-area">
 
-	<div class="medium-8 large-7 large-offset-1 columns">
+	<main id="main" class="site-main" role="main">
 
-		<div id="primary" class="content-area">
+		<div class="row expanded" data-equalizer data-equalize-on="medium">
 
-			<main id="main" class="site-main" role="main">
-				<?php
-				if ( have_posts() ) :
+			<div class="medium-8 medium-push-4 large-9 large-push-3 columns">
 
-					if ( is_home() && !is_front_page() ) : ?>
-						<header>
-							<h1 class="page-title"><?php single_post_title(); ?></h1>
-						</header>
-					<?php
-					endif;
+				<div class="row small-collapse medium-uncollapse" data-equalizer-watch>
+					<div class="large-9 large-centered columns">
 
-					while ( have_posts() ) :
+						<?php
+						if ( have_posts() ) :
 
-						the_post();
+							if ( is_home() && !is_front_page() ) : ?>
+								<header>
+									<h1 class="page-title"><?php single_post_title(); ?></h1>
+								</header>
+							<?php
+							endif;
 
-						get_template_part( 'template-parts/content', get_post_format() );
+							while ( have_posts() ) :
 
-					endwhile;
+								the_post();
 
-					the_posts_navigation();
+								get_template_part( 'template-parts/content', get_post_format() );
 
-				else :
+							endwhile;
 
-					get_template_part( 'template-parts/content', 'none' );
+							the_posts_navigation();
 
-				endif; ?>
+						else :
 
-			</main>
+							get_template_part( 'template-parts/content', 'none' );
+
+						endif; ?>
+					</div>
+
+				</div>
+			</div>
+			
+
+			<?php get_sidebar(); ?>
 
 		</div>
 
-	</div>
 
-	<div class="medium-4 large-3 end columns">
-
-		<?php get_sidebar(); ?>
-
-	</div>
-
-</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_footer();
