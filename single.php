@@ -9,41 +9,42 @@
 
 get_header(); ?>
 
-<div class="row">
+<div id="primary" class="content-area">
 
-	<div class="medium-8 columns">
+	<main id="main" class="site-main" role="main">
 
-		<div id="primary" class="content-area">
+		<div class="row expanded" data-equalizer data-equalize-on="medium">
 
-			<main id="main" class="site-main" role="main">
-			<?php
-			while ( have_posts() ) :
+			<div class="medium-8 medium-push-4 large-9 large-push-3 columns">
 
-				the_post();
+				<div class="row small-collapse medium-uncollapse" data-equalizer-watch>
+					<div class="large-9 large-centered columns">
 
-				get_template_part( 'template-parts/content', 'single' );
+						<?php
+						while ( have_posts() ) :
 
-				the_post_navigation();
+							the_post();
 
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
+							get_template_part( 'template-parts/content', 'single' );
 
-				endwhile; ?>
+							the_post_navigation();
 
-			</main>
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
+
+						endwhile; ?>
+
+					</div>
+
+				</div>
+			</div>
+
+			<?php get_sidebar(); ?>
 
 		</div>
-
-	</div>
-
-	<div class="medium-4 columns">
-
-		<?php get_sidebar(); ?>
-
-	</div>
-
-</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_footer();
