@@ -12,8 +12,10 @@ body:not(.home):not(.page-template-coaching):not(.page-template-contact):not(.si
 #main {
 	.blog & {
 		padding-top: 1rem;
+		padding-bottom: 1rem;
 		@include breakpoint(medium) {
 			padding-top: 3rem;
+			padding-bottom: 3rem;
 		}
 	}
 }

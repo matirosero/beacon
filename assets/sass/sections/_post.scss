@@ -5,11 +5,15 @@
 		margin-bottom: 1rem;
 	}
 	@include breakpoint(medium) {
-		margin-bottom: 3rem;
+		padding-bottom: 3rem;
 	}
 }
 
 .entry-meta,
 .entry-footer {
 	font-size: $small-font-size;
+}
+
+.navigation {
+	// margin-bottom: 1rem;
 }
