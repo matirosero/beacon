@@ -20,7 +20,9 @@
 }
 
 .cat-links + .tags-links,
-.tags-links + .comments-link {
+.cat-links + .comments-link,
+.tags-links + .comments-link,
+.edit-link {
    	margin-left: .5rem;
    	&:before {
    		content: '|';
