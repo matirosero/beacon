@@ -12,12 +12,13 @@
 	}
 }
 
+#secondary,
 #contact-sidebar {
 	a {
 		color: $white;
 
 		@include hover {
-			color: $white;
+			color: scale-color($beacon-orange, $lightness: 60%);
 		}
 	}
 }

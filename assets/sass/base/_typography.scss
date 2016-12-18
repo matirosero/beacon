@@ -43,6 +43,8 @@ h3 {
 	}
 }
 
+
+
 .home-hero-title {
 	color: $white;
 	font-weight: normal;
@@ -95,17 +97,20 @@ h3 {
 	}
 }
 
+#secondary {
+	background-color: $beacon-orange;
+	// font-size: $small-font-size;
+	color: scale-color($beacon-orange, $lightness: 70%);
+}	
 #contact-sidebar {
-	color: $white;
-	ul {
-		list-style: none;
-		margin-left: 0;
-	}
-	@include breakpoint(medium) {
-		text-align: right;
-	}
-
+	color: scale-color($beacon-orange, $lightness: 70%);
 }
+.widget-title,
+#secondary .page-title {
+	color: $white;
+}
+
+
 
 .top-bar,
 .off-canvas {

@@ -9,6 +9,15 @@ body:not(.home):not(.page-template-coaching):not(.page-template-contact):not(.si
 	}
 }
 
+#main {
+	.blog & {
+		padding-top: 1rem;
+		@include breakpoint(medium) {
+			padding-top: 3rem;
+		}
+	}
+}
+
 .page-section:not(#home-profiles) {
 	border-bottom: 1px solid $light-gray;
 	// background: red;
