@@ -97,6 +97,28 @@ h3 {
 	}
 }
 
+.comments-title,
+.comment-reply-title {
+	font-size: 20px;
+	@include breakpoint(medium) {
+		font-size: 26px;
+	}
+	@include breakpoint(large) {
+		font-size: 28px;
+	}
+}
+
+.comments-title {
+	font-weight: normal;
+	span {
+		font-weight: bold;
+	}
+}
+
+.comment-metadata {
+	font-size: $small-font-size;
+}
+
 #secondary {
 	background-color: $beacon-orange;
 	// font-size: $small-font-size;
@@ -109,8 +131,6 @@ h3 {
 #secondary .page-title {
 	color: $white;
 }
-
-
 
 .top-bar,
 .off-canvas {

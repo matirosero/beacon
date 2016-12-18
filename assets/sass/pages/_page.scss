@@ -10,7 +10,8 @@ body:not(.home):not(.page-template-coaching):not(.page-template-contact):not(.si
 }
 
 #main {
-	.blog & {
+	.blog &,
+	.single & {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		@include breakpoint(medium) {
@@ -42,7 +43,7 @@ body:not(.home):not(.page-template-coaching):not(.page-template-contact):not(.si
 }
 
 .vcard .fn {
-	font-weight: normal;
+	font-weight:bold;
 	// font-size: 1rem;
 }
 
