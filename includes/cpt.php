@@ -28,16 +28,20 @@ class Profile_CPT extends CPT_Core {
         // Register this cpt
         // First parameter should be an array with Singular, Plural, and Registered name
         parent::__construct(
-            array( 
+            array(
                 __( 'Profile', 'beacon' ),
                 __( 'Profiles', 'beacon' ),
                 'profile'
             ),
-            array( 
-                'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ), 
-                'has_archive' => false,
-                'menu_icon' => 'dashicons-id-alt',
-                'menu_position' => 20, //After Pages
+            array(
+                'supports'              => array('title', 'editor', 'excerpt', 'thumbnail'),
+                'has_archive'           => false,
+                'menu_icon'             => 'dashicons-id-alt',
+                'menu_position'         => 20, //After Pages
+                'exclude_from_search'   => true,
+                'publicly_queryable'    => false,
+                'show_in_nav_menus'     => false,
+                'show_ui'               => true,
             )
         );
 
