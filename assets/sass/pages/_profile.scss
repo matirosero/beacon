@@ -1,6 +1,26 @@
 .profile {
 	color: $white;
 
+	&.odd {
+		background-color: $beacon-orange;
+	}
+	&.even {
+		background-color: $beacon-green;
+	}
+
+	.profile-image {
+		background-size: cover;
+		background-position-y: 0;
+		background-position-x: center;
+		@include breakpoint(small only) {
+			min-height: 50vh;
+		}
+	}
+
+	.profile-bio {
+		@include section-spacing;
+	}
+
 	.home & {
 		background-color: transparent;
 		padding-bottom: 1rem;
