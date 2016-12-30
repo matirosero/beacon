@@ -92,6 +92,7 @@ get_header(); ?>
 				<div class="profile-bio <?php echo $profile_bio_class; ?>" data-equalizer-watch>
 					<div class="row">
 						<div class="large-9 large-centered columns">
+						 	<a name='<?php echo $post->post_name; ?>'></a>
 						 	<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 						 	<?php the_content(); ?>
 						</div>
@@ -109,10 +110,6 @@ get_header(); ?>
 
 		wp_reset_query();
 		?>
-
-
-
-
 
 	</main><!-- #main -->
 </div><!-- #primary -->

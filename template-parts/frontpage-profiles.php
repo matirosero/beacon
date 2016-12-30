@@ -64,9 +64,12 @@
 
 						<!-- <div class="eq-container" style="padding:1rem 0" data-equalizer-watch> -->
 							<?php
-							echo '<p class="lead">¡Hola! Yo soy '.$firstname.'</p>';
+							echo '<p class="lead">¡Hola! Yo soy <strong>'.$firstname.'</strong></p>';
 							the_excerpt();
+
 							?>
+
+							<a href="<?php echo get_page_link(12).'#'.$post->post_name; ?>" class="button">Algo más sobre mí</a>
 						<!-- </div> -->
 
 

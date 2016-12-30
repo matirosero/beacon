@@ -2,6 +2,13 @@
 	@include box-shadow-hover;
 	font-weight: bold;
   line-height: 1.25;
+
+  .home .profile:last-of-type & {
+    background-color: $beacon-orange;
+    @include hover {
+      background-color: scale-color($beacon-orange, $lightness: -15%);
+    }
+  }
 }
 
 input[type="submit"],
