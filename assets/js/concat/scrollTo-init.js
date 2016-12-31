@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
     console.log( "ScrollTo!" );
 
+
 			/**
 			 * Demo binding and preparation, no need to read this part
 			 */
@@ -50,4 +51,23 @@ jQuery(document).ready(function($) {
 				// nextPane.hide();
 				$target.scrollTo(nextPane, 800);
 			});
+
+
+    var $document = $(document);
+    var count = $("#hero-elements li").length;
+    console.log(count+' panes to scroll');
+
+	$document.scroll(function() {
+
+		if ($document.scrollTop() == 30) {
+		    $target.scrollTo('li:eq(1)', 800);
+		}
+		if ($document.scrollTop() == 100) {
+		    $target.scrollTo('li:eq(2)', 800);
+		}
+		if ($document.scrollTop() == 150) {
+		    $target.scrollTo('li:eq(3)', 800);
+		}
+
+	});
 });

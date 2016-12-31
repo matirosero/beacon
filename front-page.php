@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/frontpage', 'hero-v1' ); ?>
+<?php //get_template_part( 'template-parts/frontpage', 'hero-v1' ); ?>
 <?php get_template_part( 'template-parts/frontpage', 'hero-scrollto' ); ?>
 
 <div id="primary" class="content-area">
