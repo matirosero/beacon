@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 					return false;
 				});
 				//just for the example, to stop the click on the links.
-				$('#hero-elements a').click(function(e){
+				$('#hero-panes a').click(function(e){
 					var link = e.target;
 					if (link.target === '_blank') {
 						return;
@@ -41,20 +41,25 @@ jQuery(document).ready(function($) {
 
 			// Target examples bindings
 			var $target = $('#pane-target');
-			$('#hero-elements a').click(function() {
+			$('#hero-panes a').click(function() {
 				$target.stop(true);
 			});
 
-			$('#hero-elements a').click(function() {
-				// alert('hi');
+			$('#hero-panes .next-pane').click(function() {
 				var nextPane = $(this).closest('li').next('li');
-				// nextPane.hide();
 				$target.scrollTo(nextPane, 800);
 			});
 
+			$('#hero-panes .previous-pane').click(function() {
+				var prevPane = $(this).closest('li').prev('li');
+				$target.scrollTo(prevPane, 800);
+			});
+
+
+
 
     var $document = $(document);
-    var count = $("#hero-elements li").length;
+    var count = $("#hero-panes li").length;
     console.log(count+' panes to scroll');
 
 	$document.scroll(function() {

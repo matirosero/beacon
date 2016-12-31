@@ -49,7 +49,29 @@ h3 {
 	}
 }
 
+#pane-target {
+	color: $white;
+	text-align: left;
+}
+.next-pane,
+.previous-pane {
+	@include text-shadow();
+}
+.pane-title {
+	color: $white;
+	font-weight: normal;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	text-transform: none;
+	@include text-shadow();
 
+	@include breakpoint(small only) {
+		font-size: 1rem;
+	}
+	@include breakpoint(medium) {
+		
+	}
+}
 
 .home-hero-title {
 	color: $white;
