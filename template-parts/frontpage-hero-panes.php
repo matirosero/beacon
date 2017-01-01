@@ -27,9 +27,21 @@
 			        	$logo .= 'logo-beacon-hero-over-orange.svg';
 			        }
 
+			        $img = $pane['header_image'];
+			        $img_id = $pane['header_image_id'];
+
+			        $img_xlarge = $pane['header_image_xlarge'];
+			        $img_xlarge_id = $pane['header_image_xlarge_id'];
+
+			        $img_medium = $pane['header_image_medium'];
+			        $img_medium_id = $pane['header_image_medium_id'];
+
+			        $img_small = $pane['header_image_small'];
+			        $img_small_id = $pane['header_image_small_id'];
+
 			        echo '<li class="'.$pane_class.'">';
 
-				        echo '<div class="pane-img">&nbsp</div>';
+				        echo '<div class="pane-img">&nbsp;</div>';
 
 				        echo '<div class="pane-content">
 				        	<h2 class="pane-title">'.$pane['header_description'].'</h2>
@@ -47,9 +59,9 @@
 				        if ($i != $count ) {
 				        	echo '<a href="" class="next-pane"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>';
 				        }
-				        if ($i == $count ) {
-				        	echo '<a href="" class="first-pane">Start</a>';
-				        }
+				        // if ($i == $count ) {
+				        // 	echo '<a href="" class="first-pane">Start</a>';
+				        // }
 
 			        echo '</li>';
 
