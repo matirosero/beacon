@@ -17,28 +17,28 @@
 	@include breakpoint(small only) {
 		height: 75vh;
 		max-height: 100vw;
-		.home-hero-title {
-			position: absolute;
-			padding: 0 25% 0 25px;
-			top: .75rem;
-			width:100%;
-			text-align: left;
-		}
-		.home-hero-logo {
-			max-width: 60%;
-			margin: 0 auto 1rem;
-			width: 100%;
-			position: absolute;
-			bottom: 25vw;
-			left: 20%;
-		}
+		// .home-hero-title {
+		// 	position: absolute;
+		// 	padding: 0 25% 0 25px;
+		// 	top: .75rem;
+		// 	width:100%;
+		// 	text-align: left;
+		// }
+		// .home-hero-logo {
+		// 	max-width: 60%;
+		// 	margin: 0 auto 1rem;
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	bottom: 25vw;
+		// 	left: 20%;
+		// }
 
-		.home-header-cta {
-			position: absolute;
-			bottom: 0;
-			padding: 0 25px;
-			width: 100%;
-		}
+		// .home-header-cta {
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	padding: 0 25px;
+		// 	width: 100%;
+		// }
 
 	}
 

@@ -1,0 +1,149 @@
+#pane-target {
+	background-color: $beacon-orange;
+	height: 75vh;
+	max-height: 110vw;
+	width: 100%;
+	overflow: auto;
+	a {
+		color: $white;
+	}
+}
+#hero-panes {
+	width: 400vw;
+	@include reset-list;
+}
+
+$panel-link-width: 40px;
+
+.pane {
+	display: block;
+	float:left;
+	height: 75vh;
+	max-height: 110vw;
+	margin:0;
+	position: relative;
+	text-align: center;
+	width: 100vw;
+
+	.previous-pane,.next-pane {
+		position: absolute;
+		top:0;
+		line-height: 1;
+		padding-bottom:.75rem;
+		height: 100%;
+		width: $panel-link-width;
+		z-index: 900;
+  
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.previous-pane {
+		left: 0;
+	}
+	.next-pane {
+		right:0;
+	}
+
+	// @include breakpoint(small only) {
+	// 	background-color: $beacon-orange; //so image looks orange on small
+	// }
+}
+.pane-img {
+	background-size:cover;
+	background-image: url('../img/home-header-slide1.jpg');
+	// opacity: 0.25; //so it looks orange on small
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index:80;
+	left:0;
+
+	.first & {
+		background-image: url('../img/home-header-1-700.jpg');
+		background-position-y: 0;
+		background-position-x: 0;
+		// opacity: 1;
+	}
+
+	@include breakpoint(medium) {
+		// opacity: 1;
+		li:not(.first) & {
+			width: 50%;
+			background-image: url('../img/home-header-slide.jpg');
+		}
+	}
+	@include breakpoint(xlarge) {
+		li:not(.first) & {
+			width: 60%;
+		}
+	}
+	@include breakpoint(xxlarge) {
+		li:not(.first) & {
+			width: 65%;
+		}
+	}
+}
+.pane-content {
+	padding: 0 $panel-link-width;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+  	transform: translateY(-50%);
+	z-index:90;
+	@include breakpoint(medium) {
+		padding-bottom:1rem;
+		.first & {
+			width: 70%;
+			left:0;
+			right: 0;
+			// background-color:red;
+		}
+		li:not(.first) & {
+			width: 50%;
+			right: 0;
+			left:50%;
+		}
+	}
+	@include breakpoint(large) {
+		padding-bottom:2rem;
+		.first & {
+			// background-color:orange;
+		}
+	}
+	@include breakpoint(xlarge) {
+		padding-bottom:3rem;
+		.first & {
+			// background-color:blue;
+			width: 60%;
+			left: 5%;
+		}
+		li:not(.first) & {
+			width: 40%;
+			left: 60%;
+		}
+	}
+	@include breakpoint(xxlarge) {
+		.first & {
+			width: 50%;
+			left: 15%;
+			// background-color:purple;
+		}
+		li:not(.first) & {
+			width: 35%;
+			left: 65%;
+		}
+	}
+}
+.pane-logo {
+	margin-bottom: 1rem;
+	@include breakpoint(small only) {
+		img {
+			width: 40vw;
+		}
+	}
+	@include breakpoint(medium) {
+		margin-bottom: 2rem;
+	}
+}
