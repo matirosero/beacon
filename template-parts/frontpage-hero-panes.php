@@ -28,20 +28,62 @@
 			        }
 
 			        $img = $pane['header_image'];
-			        $img_id = $pane['header_image_id'];
+			        // $img_id = $pane['header_image_id'];
 
 			        $img_xlarge = $pane['header_image_xlarge'];
-			        $img_xlarge_id = $pane['header_image_xlarge_id'];
+			        // $img_xlarge_id = $pane['header_image_xlarge_id'];
 
 			        $img_medium = $pane['header_image_medium'];
-			        $img_medium_id = $pane['header_image_medium_id'];
+			        // $img_medium_id = $pane['header_image_medium_id'];
 
 			        $img_small = $pane['header_image_small'];
-			        $img_small_id = $pane['header_image_small_id'];
+			        // $img_small_id = $pane['header_image_small_id'];
 
 			        echo '<li class="'.$pane_class.'">';
 
-				        echo '<div class="pane-img">&nbsp;</div>';
+				    if ( empty( $img_xlarge ) && empty( $img_medium ) && empty( $img_small ) ) : 
+
+						echo '<div class="pane-img" role="banner" style="background-image: url('.$img.')">&nbsp;</div>';
+					else:
+
+						//default image (xxxl) is the fallback
+						$mq = '#pane-img-'.$i.' {
+									background-image: url('.$img.')
+							}';
+
+						if ( !empty( $img_xlarge ) ) :
+							$mq .= '@media only screen and (max-width : 1440px) {
+									#pane-img-'.$i.' {
+										background-image: url('.$img_xlarge.')
+									}
+								}';
+						endif;
+
+						if ( !empty( $img_medium ) ) :
+							$mq .= '@media only screen and (max-width : 1024px) {
+								#pane-img-'.$i.' {
+									background-image: url('.$img_medium.')
+								}
+							}';
+						endif;
+
+						if ( !empty( $img_small ) ) :
+							$mq .= '@media only screen and (max-width : 700px) {
+								#pane-img-'.$i.' {
+									background-image: url('.$img_small.')
+								}
+							}';
+						endif;
+
+						echo '<div id="pane-img-'.$i.'" class="pane-img" role="banner">&nbsp;</div>
+								<style scoped>'
+									.$mq.
+								'</style>
+							<div>';
+					endif;
+
+
+				        // echo '<div class="pane-img">&nbsp;</div>';
 
 				        echo '<div class="pane-content">
 				        	<h2 class="pane-title">'.$pane['header_description'].'</h2>

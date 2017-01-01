@@ -45,14 +45,14 @@ $panel-link-width: 40px;
 		right:0;
 	}
 
-	@include breakpoint(small only) {
-		background-color: $beacon-orange; //so image looks orange on small
-	}
+	// @include breakpoint(small only) {
+	// 	background-color: $beacon-orange; //so image looks orange on small
+	// }
 }
 .pane-img {
 	background-size:cover;
 	background-image: url('../img/home-header-slide1.jpg');
-	opacity: 0.25; //so it looks orange on small
+	// opacity: 0.25; //so it looks orange on small
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -63,11 +63,11 @@ $panel-link-width: 40px;
 		background-image: url('../img/home-header-1-700.jpg');
 		background-position-y: 0;
 		background-position-x: 0;
-		opacity: 1;
+		// opacity: 1;
 	}
 
 	@include breakpoint(medium) {
-		opacity: 1;
+		// opacity: 1;
 		li:not(.first) & {
 			width: 50%;
 			background-image: url('../img/home-header-slide.jpg');
@@ -98,7 +98,7 @@ $panel-link-width: 40px;
 			width: 70%;
 			left:0;
 			right: 0;
-			background-color:red;
+			// background-color:red;
 		}
 		li:not(.first) & {
 			width: 50%;
@@ -109,13 +109,13 @@ $panel-link-width: 40px;
 	@include breakpoint(large) {
 		padding-bottom:2rem;
 		.first & {
-			background-color:orange;
+			// background-color:orange;
 		}
 	}
 	@include breakpoint(xlarge) {
 		padding-bottom:3rem;
 		.first & {
-			background-color:blue;
+			// background-color:blue;
 			width: 60%;
 			left: 5%;
 		}
@@ -128,7 +128,7 @@ $panel-link-width: 40px;
 		.first & {
 			width: 50%;
 			left: 15%;
-			background-color:purple;
+			// background-color:purple;
 		}
 		li:not(.first) & {
 			width: 35%;
