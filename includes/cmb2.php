@@ -99,31 +99,9 @@ function beacon_register_frontpage_metabox() {
 	 */
 
 	$cmb_frontpage->add_group_field( $group_field_id, array(
-		'name' => esc_html__( 'Imagen principal', 'cmb2' ),
+		'name' => esc_html__( 'Imagen', 'cmb2' ),
 		'id'   => 'header_image',
 		'type' => 'file',
-		'desc' => 'Imagen por defecto, se muestra en monitores grandes (mayores a 1440px).',
-	) );
-
-	$cmb_frontpage->add_group_field( $group_field_id, array(
-		'name' => esc_html__( 'Imagen grande', 'cmb2' ),
-		'id'   => 'header_image_xlarge',
-		'type' => 'file',
-		'desc' => 'Imagen para pantallas hasta 1440px',
-	) );
-
-	$cmb_frontpage->add_group_field( $group_field_id, array(
-		'name' => esc_html__( 'Imagen mediana', 'cmb2' ),
-		'id'   => 'header_image_medium',
-		'type' => 'file',
-		'desc' => 'Imagen para pantallas hasta 1024px',
-	) );
-
-	$cmb_frontpage->add_group_field( $group_field_id, array(
-		'name' => esc_html__( 'Imagen pequeña', 'cmb2' ),
-		'id'   => 'header_image_small',
-		'type' => 'file',
-		'desc' => 'Imagen para pantallas pequeñas/móviles (menos de 700px)',
 	) );
 
 	$cmb_frontpage->add_group_field( $group_field_id, array(
