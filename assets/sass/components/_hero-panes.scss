@@ -98,7 +98,7 @@ $panel-link-width: 40px;
 			width: 70%;
 			left:0;
 			right: 0;
-			// background-color:red;
+			background-color:red;
 		}
 		li:not(.first) & {
 			width: 50%;
@@ -109,13 +109,13 @@ $panel-link-width: 40px;
 	@include breakpoint(large) {
 		padding-bottom:2rem;
 		.first & {
-			// background-color:yellow;
+			background-color:orange;
 		}
 	}
 	@include breakpoint(xlarge) {
 		padding-bottom:3rem;
 		.first & {
-			// background-color:blue;
+			background-color:blue;
 			width: 60%;
 			left: 5%;
 		}
@@ -128,7 +128,7 @@ $panel-link-width: 40px;
 		.first & {
 			width: 50%;
 			left: 15%;
-			// background-color:purple;
+			background-color:purple;
 		}
 		li:not(.first) & {
 			width: 35%;
