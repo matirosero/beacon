@@ -16,14 +16,16 @@
 
 			        $i = ! isset( $i ) ? 1 : $i;
 
+			        $cta_link = get_page_link(10).'#appointment-form';
+			        $logo = get_stylesheet_directory_uri().'/assets/dist/svg/';
+
 			        if ($i == 1 ) {
 			        	$pane_class = 'first pane';
+			        	$logo .= 'logo-beacon-hero-shadow.svg';
 			        } else {
 			        	$pane_class = 'pane';
+			        	$logo .= 'logo-beacon-hero-over-orange.svg';
 			        }
-
-			        $logo = get_stylesheet_directory_uri().'/assets/dist/svg/logo-beacon-hero-shadow.svg';
-			        $cta_link = get_page_link(10).'#appointment-form';
 
 			        echo '<li class="'.$pane_class.'">';
 
