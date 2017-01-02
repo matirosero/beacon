@@ -53,6 +53,8 @@ $panel-link-width: 40px;
 	background-size:cover;
 	background-image: url('../img/home-header-slide1.jpg');
 	// opacity: 0.25; //so it looks orange on small
+	background-position-x: center; //horizontal
+	background-position-y: 0; //vertical
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -61,8 +63,8 @@ $panel-link-width: 40px;
 
 	.first & {
 		background-image: url('../img/home-header-1-700.jpg');
-		background-position-y: 0;
-		background-position-x: 0;
+		background-position-x: 100%;
+		// background-position-x: 0;
 		// opacity: 1;
 	}
 
