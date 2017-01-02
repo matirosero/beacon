@@ -1,10 +1,10 @@
 #home-header {
 
-	background-color: $black;
-	background-image: url('../img/home-header-1-700.jpg');
-	background-size: cover;
-	background-position-x: center;
-	background-position-y: top; //vertical
+	// background-color: $black;
+	// // background-image: url('../img/home-header-1-700.jpg');
+	// background-size: cover;
+	// background-position-x: center;
+	// background-position-y: top; //vertical
 	position: relative;
 	text-align: center;
 
@@ -15,7 +15,7 @@
 
 
 	@include breakpoint(small only) {
-		height: 75vh;
+		// height: 75vh;
 		max-height: 100vw;
 		// .home-hero-title {
 		// 	position: absolute;
@@ -43,9 +43,9 @@
 	}
 
 	@include breakpoint(medium) {
-		min-height: 75vh;
+		// min-height: 75vh;
 		// max-height: 100vw;
-		background-image: url('../img/home-header-1-1024.jpg');
+		// background-image: url('../img/home-header-1-1024.jpg');
 		// background-position-y: center;
 
 		#home-header-text {
@@ -60,7 +60,7 @@
 	}
 
 	@include breakpoint(large) {
-		background-image: url('../img/home-header-1-1200.jpg');
+		// background-image: url('../img/home-header-1-1200.jpg');
 
 		#home-header-text {
 			padding-top: 7vw;
@@ -68,11 +68,11 @@
 	}
 
 	@include breakpoint(xlarge) {
-		background-image: url('../img/home-header-1-1440.jpg');
+		// background-image: url('../img/home-header-1-1440.jpg');
 	}
 
 	@include breakpoint(xxlarge) {
-		background-image: url('../img/home-header-1-1920.jpg');
+		// background-image: url('../img/home-header-1-1920.jpg');
 	}
 }
 

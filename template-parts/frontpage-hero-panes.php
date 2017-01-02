@@ -1,4 +1,4 @@
-<header id="home-header">
+<header id="home-header" class="clearfix">
 	<div id="pane-target" class="pane">
 		<ul id="hero-panes">
 
