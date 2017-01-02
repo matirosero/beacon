@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 					return false;
 				});
 				//just for the example, to stop the click on the links.
-				$('#hero-panes a').click(function(e){
+				$('#hero-panes a:not(.button)').click(function(e){
 					var link = e.target;
 					if (link.target === '_blank') {
 						return;

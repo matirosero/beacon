@@ -16,7 +16,7 @@
 
 			        $i = ! isset( $i ) ? 1 : $i;
 
-			        $cta_link = get_page_link(10).'#appointment-form';
+			        $cta_link = get_page_link(10).'#sesion-gratuita';
 			        $logo = get_stylesheet_directory_uri().'/assets/dist/svg/';
 
 			        if ($i == 1 ) {

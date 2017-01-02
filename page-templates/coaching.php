@@ -56,6 +56,7 @@ get_header(); ?>
 		<section id="appointment-form" class="page-section">
 			<div class="row">
 				<div class="medium-11 large-9 small-centered columns">
+					<a name="sesion-gratuita"></a>
 					<h2 class="section-title">¡Anímese a dar el primer paso!</h2>
 					<?php echo do_shortcode( '[contact-form-7 id="44" title="Solicitud de llamada gratuita"]' ); ?>
 				</div>
