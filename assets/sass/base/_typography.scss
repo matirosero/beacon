@@ -113,8 +113,12 @@ h3 {
 	}
 	.coaching-benefits {
 		list-style: none;
+		margin-left: 1.5rem;
 		li {
+			margin-bottom: .75rem;
+			line-height: 1.25;
 			position: relative;
+
 			&:before {
 				color: $beacon-orange;
 				content: "\f00c";
@@ -125,10 +129,16 @@ h3 {
 
 			    position: absolute;
 			    left: -1.25rem;
-			    top: .35rem;
+			    top: .2rem;
+			}
+			&.active {
+				font-size: 1.5rem;
+				&:before {
+					left: -1.5rem;
+					top: .4rem;
+				}
 			}
 		}
-
 	}
 }
 
