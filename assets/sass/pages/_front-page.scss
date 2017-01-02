@@ -96,6 +96,7 @@
 	height: 0;
 	background-image: url('../img/home-profiles-700.jpg');
 	background-size:cover;
+	background-position-x: center;
 
 	@include breakpoint(medium) {
 		padding-top: 30%;
