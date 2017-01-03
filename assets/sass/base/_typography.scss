@@ -111,7 +111,7 @@ h3 {
 			font-size: 31px;
 		}
 	}
-	.coaching-benefits {
+	#coaching-benefits {
 		list-style: none;
 		margin-left: 1.5rem;
 		li {
@@ -128,16 +128,16 @@ h3 {
 			    -webkit-font-smoothing: antialiased;
 
 			    position: absolute;
-			    left: -1.25rem;
+			    left: -1.5rem;
 			    top: .2rem;
 			}
-			&.active {
-				font-size: 1.5rem;
-				&:before {
-					left: -1.5rem;
-					top: .4rem;
-				}
-			}
+			// &:last-child {
+			// 	font-size: 1.5rem;
+			// 	&:before {
+			// 		left: -1.5rem;
+			// 		top: .4rem;
+			// 	}
+			// }
 		}
 	}
 }

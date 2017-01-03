@@ -37,12 +37,14 @@ get_header(); ?>
 							        $i = ! isset( $i ) ? 1 : $i;
 
 							        if ($i == 1 ) {
-							        	echo '<li class="first">';
+							        	$li_class = 'first';
 							        } else {
-							        	echo '<li>';
+							        	$li_class = '';
 							        }
 
-							        echo wpautop( $step['step_description'] ).'</li>';
+							        echo '<li class="'.$li_class.'">'.wpautop( $step['step_description'] ).'</li>';
+
+							        $i++;
 							    }
 							}
 							?>

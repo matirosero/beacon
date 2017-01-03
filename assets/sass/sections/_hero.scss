@@ -5,6 +5,7 @@
 	background-position: center;
 	position: relative;
 
+
 	@include breakpoint(small only) {
 		max-height: 47vw;
 		padding-top: 47vw;
@@ -15,6 +16,7 @@
 		background-image: url('../img/bg-coaching-700.jpg');
 		@include breakpoint(medium) {
 			background-image: url('../img/bg-coaching-1024.jpg');
+			overflow: hidden;
 		}
 		@include breakpoint(large) {
 			background-image: url('../img/bg-coaching-1920.jpg');

@@ -16,7 +16,7 @@ if ( has_post_thumbnail( $post->ID ) ) :
 						<h1 class="entry-title">
 							Beneficios del Coaching
 						</h1>
-						<ul class="coaching-benefits">
+						<ul id="coaching-benefits">
 							<li>Crecer en la conciencia de sí mismo</li>
 							<li>Identificar sus valores y su visión del futuro</li>
 							<li>Desarrollar objetivos y los planes de acción para alcanzarlos</li>

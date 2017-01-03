@@ -50,3 +50,28 @@ body:not(.home):not(.page-template-coaching):not(.page-template-about):not(.page
 .entry-content p {
 	margin-bottom: 1.25rem;
 }
+
+#coaching-benefits {
+	
+	li {
+		// visibility: hidden;
+		opacity: 0;
+		// -webkit-transition: all 2.5s ease;
+		// -moz-transition: all 2.5s ease;
+		// -o-transition: all 2.5s ease;
+		// -ms-transition: all 2.5s ease;
+  //       transition: all 2.5s ease;
+        @include breakpoint(medium) {
+	        font-size: 1.5rem;
+			&.active {
+				font-size: 1.5rem;
+				opacity: 1;
+				&:before {
+					left: -1.5rem;
+					top: .4rem;
+				}
+			}
+		}
+	}
+	
+}

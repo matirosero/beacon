@@ -42,6 +42,17 @@ add_action( 'wp_enqueue_scripts', function() {
 	//FontAwesome
 	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/44d4afc856.js', array(), '4.7.0', false );
 
+	//Animate coaching benefits
+	if ( is_page_template( 'page-templates/coaching.php' ) ) {
+		wp_enqueue_script( 'animate-benefits', 
+			BEACON_URL . '/assets/js/animate-benefits.js', 
+			['jquery'], 
+			'', 
+			true 
+		);
+	}
+	
+
 	// Add comment script on single posts with comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
