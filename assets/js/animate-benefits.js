@@ -1,9 +1,7 @@
 jQuery(document).ready(function($) {
     console.log( "animate benefits" );
 
-
-
-    var benefits = $('#coaching-benefits');
+    // var benefits = $('#coaching-benefits');
     	// animateClass = 'animated fadeInUp';
 
 	$(window).load(function() {
@@ -22,7 +20,5 @@ jQuery(document).ready(function($) {
 		});
 
 	});
-
-    // benefits.find('li:first-child').addClass(animateClass);
 
 });
