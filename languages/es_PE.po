@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Beacon\n"
-"POT-Creation-Date: 2016-11-24 14:21-0600\n"
-"PO-Revision-Date: 2016-11-24 14:24-0600\n"
+"POT-Creation-Date: 2017-01-04 10:05-0600\n"
+"PO-Revision-Date: 2017-01-04 10:05-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -86,88 +86,152 @@ msgid "Remove State"
 msgstr "Eliminar estado"
 
 #: includes/cmb2.php:102
-msgid "Imagen"
-msgstr ""
-
-#: includes/cmb2.php:108
-msgid "Texto"
+msgid "Imagen principal"
 msgstr ""
 
 #: includes/cmb2.php:109
-msgid "Texto que acompaña a la imagen"
-msgstr ""
-
-#: includes/cmb2.php:115
-msgid "Imagen a pantalla completa?"
+msgid "Imagen grande"
 msgstr ""
 
 #: includes/cmb2.php:116
+msgid "Imagen mediana"
+msgstr ""
+
+#: includes/cmb2.php:123
+msgid "Imagen pequeña"
+msgstr ""
+
+#: includes/cmb2.php:130
+msgid "Texto"
+msgstr ""
+
+#: includes/cmb2.php:131
+msgid "Texto que acompaña a la imagen"
+msgstr ""
+
+#: includes/cmb2.php:137
+msgid "Imagen a pantalla completa?"
+msgstr ""
+
+#: includes/cmb2.php:138
 msgid "(La primera imagen debe ser pantalla completa)"
 msgstr ""
 
-#: includes/cmb2.php:127
+#: includes/cmb2.php:149
 msgid "Cómo podemos ayudarle"
 msgstr ""
 
-#: includes/cmb2.php:128
+#: includes/cmb2.php:150
 msgid "Texto que está debajo del encabezado"
 msgstr ""
 
-#: includes/cmb2.php:134
+#: includes/cmb2.php:156
 msgid "Servicios"
 msgstr ""
 
-#: includes/cmb2.php:135
+#: includes/cmb2.php:157
 msgid "Texto servicios"
 msgstr ""
 
-#: includes/cmb2.php:142
+#: includes/cmb2.php:164
 msgid "Mostrar..."
 msgstr ""
 
-#: includes/cmb2.php:143
+#: includes/cmb2.php:165
 msgid "Marque si quiere que aparezcan"
 msgstr ""
 
-#: includes/cmb2.php:148
+#: includes/cmb2.php:170
 msgid "Enlace al test"
 msgstr ""
 
-#: includes/cmb2.php:149
+#: includes/cmb2.php:171
 msgid "Perfiles"
 msgstr ""
 
-#: includes/cmb2.php:150
+#: includes/cmb2.php:172
 msgid "Eventos"
 msgstr ""
 
-#: includes/cmb2.php:169
+#: includes/cmb2.php:191
 msgid "Pasos del proceso de coaching"
 msgstr ""
 
-#: includes/cmb2.php:177
+#: includes/cmb2.php:199
 msgid "Añada y describa los pasos."
 msgstr ""
 
-#: includes/cmb2.php:179
+#: includes/cmb2.php:201
 msgid "Paso {#}"
 msgstr ""
 
-#: includes/cmb2.php:180
+#: includes/cmb2.php:202
 msgid "Add Another Step"
 msgstr "Añadir paso"
 
-#: includes/cmb2.php:181
+#: includes/cmb2.php:203
 msgid "Remove Step"
 msgstr "Eliminar paso"
 
-#: includes/cmb2.php:194
+#: includes/cmb2.php:216
 msgid "Description"
 msgstr "Descripción"
 
-#: includes/cmb2.php:195
+#: includes/cmb2.php:217
 msgid "Write a short description for this entry"
 msgstr "Escriba una descripción corta"
+
+#: includes/cmb2.php:238
+msgid "Formas de contact"
+msgstr ""
+
+#: includes/cmb2.php:248
+msgid "Email {#}"
+msgstr ""
+
+#: includes/cmb2.php:249
+msgid "Add Another Email"
+msgstr ""
+
+#: includes/cmb2.php:250
+msgid "Remove Email"
+msgstr ""
+
+#: includes/cmb2.php:263
+msgid "Email"
+msgstr ""
+
+#: includes/cmb2.php:276
+msgid "Phone {#}"
+msgstr ""
+
+#: includes/cmb2.php:277
+msgid "Add Another Phone"
+msgstr ""
+
+#: includes/cmb2.php:278
+msgid "Remove Phone"
+msgstr ""
+
+#: includes/cmb2.php:284
+msgid "Phone number"
+msgstr ""
+
+#: includes/cmb2.php:297
+msgid "Skype {#}"
+msgstr ""
+
+#: includes/cmb2.php:298
+msgid "Add Another Skype"
+msgstr ""
+
+#: includes/cmb2.php:299
+msgid "Remove Skype"
+msgstr ""
+
+#: includes/cmb2.php:305
+msgid "Skype username"
+msgstr ""
 
 #: includes/cpt.php:32
 msgid "Profile"
@@ -177,7 +241,7 @@ msgstr "Perfil"
 msgid "Profiles"
 msgstr "Perfiles"
 
-#: includes/cpt.php:54
+#: includes/cpt.php:58
 #, php-format
 msgid "%s Headshot"
 msgstr "%s retrato"
@@ -194,6 +258,10 @@ msgstr ""
 #, php-format
 msgid "%s icon"
 msgstr "%s ícono"
+
+#: includes/extras.php:92
+msgid "Read More"
+msgstr "Seguir leyendo"
 
 #: includes/menu.php:12
 msgid "The Main Menu"
@@ -282,15 +350,10 @@ msgstr ""
 "Parece que no podemos encontrar lo que está buscando. Talvez una búsqueda "
 "pueda ayudar."
 
-#: template-parts/content-page.php:20 template-parts/content-single.php:24
-#: template-parts/content.php:34
+#: template-parts/content-page.php:20 template-parts/content-single.php:27
+#: template-parts/content.php:33
 msgid "Pages:"
 msgstr "Páginas:"
-
-#: template-parts/content.php:27
-#, php-format
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Seguir leyendo %s <span class=\"meta-nav\">&rarr;</span>"
 
 #: template-parts/nav-offcanvas-topbar.php:16
 #: template-parts/nav-offcanvas.php:10
@@ -316,6 +379,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://matilderosero.com"
 msgstr ""
+
+#~ msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Seguir leyendo %s <span class=\"meta-nav\">&rarr;</span>"
 
 #~ msgid "Primary Menu"
 #~ msgstr "Menú principal"
