@@ -86,7 +86,7 @@
 				        // echo '<div class="pane-img">&nbsp;</div>';
 
 				        echo '<div class="pane-content">
-				        	<h2 class="pane-title">'.$pane['header_description'].'</h2>
+				        	<p class="pane-title">'.$pane['header_description'].'</p>
 								<p class="pane-logo">
 									<img src="'.$logo.'" alt="Beacon Transition &amp; Life Coaching" />
 								</p>

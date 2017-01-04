@@ -109,13 +109,13 @@ $panel-link-width: 40px;
 		}
 	}
 	@include breakpoint(large) {
-		padding-bottom:2rem;
+		// padding-bottom:2rem;
 		.first & {
 			// background-color:orange;
 		}
 	}
 	@include breakpoint(xlarge) {
-		padding-bottom:3rem;
+		// padding-bottom:3rem;
 		.first & {
 			// background-color:blue;
 			width: 60%;
