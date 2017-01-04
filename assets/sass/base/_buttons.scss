@@ -3,10 +3,16 @@
 	font-weight: bold;
   line-height: 1.25;
 
-  .home .profile:last-of-type & {
-    background-color: $beacon-orange;
+  .home .profile:first-of-type & {
+    background-color: $beacon-green;
     @include hover {
-      background-color: scale-color($beacon-orange, $lightness: -15%);
+      background-color: scale-color($beacon-green, $lightness: -15%);
+    }
+  }
+  #secondary & {
+    background-color: $beacon-green;
+    @include hover {
+      background-color: scale-color($beacon-green, $lightness: -15%);
     }
   }
 }
@@ -19,8 +25,15 @@ input[type="button"] {
 
   #appointment-form & {
   	background-color: $beacon-orange;
-	@include hover {
-		background-color: scale-color($beacon-orange, $lightness: -15%);
-	}
+  	@include hover {
+  		background-color: scale-color($beacon-orange, $lightness: -15%);
+  	}
+  }
+
+  #secondary & {
+    background-color: $beacon-green;
+    @include hover {
+      background-color: scale-color($beacon-green, $lightness: -15%);
+    }
   }
 }
