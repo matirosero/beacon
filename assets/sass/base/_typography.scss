@@ -18,7 +18,7 @@ p {
 
 h1, h2, h3 {
 	text-transform: uppercase;
-	color: $beacon-orange;
+	color: $beacon-green;
 	#contact-sidebar & {
 		color: $white;
 		font-size: 19px;
@@ -87,7 +87,7 @@ h3 {
 
 .entry-title,
 .section-title {
-	color: $beacon-orange;
+	color: $beacon-green;
 	.home & {
 		text-align: center;
 	}
