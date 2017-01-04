@@ -1,5 +1,5 @@
 <header id="home-header" class="clearfix">
-	<div id="pane-target" class="pane">
+	<div id="pane-target">
 		<ul id="hero-panes">
 
 			<?php

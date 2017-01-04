@@ -9,7 +9,8 @@
       background-color: scale-color($beacon-green, $lightness: -15%);
     }
   }
-  #secondary & {
+  #secondary &,
+  .pane:not(.first) & {
     background-color: $beacon-green;
     @include hover {
       background-color: scale-color($beacon-green, $lightness: -15%);
