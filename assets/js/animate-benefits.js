@@ -11,13 +11,13 @@ jQuery(document).ready(function($) {
 			console.log('DO IT');
 		}
 		$('#coaching-benefits li').each(function(index) {
-			$(this).delay(index * 2000).animate({ 
+			$(this).delay(index * 1500).animate({ 
 				// fontSize: '1.5rem',
 				opacity: 1,
-			}, 1000, function(){
+			}, 800, function(){
 				$(this).animate({
 					fontSize: '1rem',
-				}, 1000);
+				}, 400);
 			});
 		});
 
