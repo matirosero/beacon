@@ -24,10 +24,16 @@ $answer-bg-choose: $beacon-green;
 	    border: 3px solid rgba($answer-bg-choose, 0.5);
 	}
 	#wpvq-form-informations p.wpvq-submit-button-ask button {
+	  	@include box-shadow-hover;
+		font-weight: bold;
+		line-height: 1.25;
 	  	background-color: $beacon-orange;
 	  	@include hover {
 	  		background-color: scale-color($beacon-orange, $lightness: -15%);
 	  	}
+	}
+	div#wpvq-final-personality .wpvq-you-are {
+		@extend h2;
 	}
 	div#wpvq-final-score, div#wpvq-final-personality, div#wpvq-ask-before-results, div#wpvq-forceToShare-before-results {
 		background: #eee;
