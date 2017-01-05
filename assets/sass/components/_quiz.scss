@@ -1,0 +1,35 @@
+$answer-bg: $beacon-orange;
+$answer-bg-choose: $beacon-green;
+#primary {
+	.wpvq {
+	    font-family: $body-font-family;
+	    max-width: 1200px;
+	    text-align: left;
+	}
+	.wpvq-question .wpvq-question-label {
+		text-align: left;
+	}
+	.wpvq-answer {
+		background: #eee;
+		border: 3px solid #eee;
+		&:hover {
+		    background: rgba($answer-bg, 0.5);
+		    border: 3px solid rgba($answer-bg, 0.5);
+
+		}
+		
+	}
+	.Personality .wpvq-answer.wpvq-choose {
+	    background: rgba($answer-bg-choose, 0.5);
+	    border: 3px solid rgba($answer-bg-choose, 0.5);
+	}
+	#wpvq-form-informations p.wpvq-submit-button-ask button {
+	  	background-color: $beacon-orange;
+	  	@include hover {
+	  		background-color: scale-color($beacon-orange, $lightness: -15%);
+	  	}
+	}
+	div#wpvq-final-score, div#wpvq-final-personality, div#wpvq-ask-before-results, div#wpvq-forceToShare-before-results {
+		background: #eee;
+	}
+}
