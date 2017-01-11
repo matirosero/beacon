@@ -18,3 +18,19 @@ function beacon_fbevent_date($format = 'long') {
 	}
 	return $date;
 }
+
+// example of what goes in functions.php
+// in add filter
+
+// "my-filter-name" is the name of the filter
+// Enter this into the filter field when creating the CF7 field
+
+// "my_filter_function" is the name of the function that is called
+add_filter('post-title', 'my_filter_function', 10, 2);
+
+function my_filter_function($value, $args) {
+  global $post;
+  // set value and return
+  $value = $post->post_title;
+  return $value;
+}
