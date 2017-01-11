@@ -115,3 +115,14 @@ function beacon_category_transient_flusher() {
 }
 add_action( 'edit_category', 'beacon_category_transient_flusher' );
 add_action( 'save_post',     'beacon_category_transient_flusher' );
+
+
+//Manual excerpt length
+function excerpt($num) {
+    global $post;
+    $limit = $num+1;
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    array_pop($excerpt);
+    $excerpt = '<p>'.implode(" ",$excerpt).'...</p><a class="button small read-more" href="' .get_permalink($post->ID) .' ">Más información</a>';
+    echo $excerpt;
+}

@@ -1,7 +1,28 @@
 $box_small_size: 60px;
 
 #home-events {
-	background-color: $light-gray;
+	background-color: $beacon-green;
+	color: $white;
+	.entry-title {
+		color: $white;
+		text-align: left;
+	
+		& + p {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.post-thumbnail {
+		margin-bottom: 1rem;
+		a {
+			display: block;
+			position: relative;
+
+		}
+		@include breakpoint(large) {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .facebook_events {
@@ -20,13 +41,19 @@ $box_small_size: 60px;
 
 .event-date-box {
 	background: $beacon-green;
-	color: $white;
+	color: $white !important;
 	font-size: $small-font-size;
 	font-family: $header-font-family;
 	margin-right: .5rem;
 	padding: .15rem .5rem;
 	text-align: center;
 	text-transform: uppercase;
+
+	.post-thumbnail & {
+		position: absolute;
+		bottom: 0;
+		background-color: $beacon-orange;
+	}
 
 	span {
 		

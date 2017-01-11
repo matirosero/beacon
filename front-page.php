@@ -35,6 +35,8 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php get_template_part( 'template-parts/frontpage', 'events' ); ?>
+
 
 		<?php /*
 		<section id="home-test">
@@ -56,9 +58,6 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-
-
-		<?php get_template_part( 'template-parts/frontpage', 'events' ); ?>
 
 		<?php get_template_part( 'template-parts/frontpage', 'profiles' ); ?>
 
