@@ -1,0 +1,83 @@
+$box_small_size: 60px;
+
+.facebook_events {
+	// padding-bottom: 2rem;
+	.post-thumbnail {
+		display: block;
+		margin-bottom: 1rem;
+	}
+	@include breakpoint(medium) {
+		padding-bottom: 3rem;
+	}
+	.entry-header {
+		margin-bottom: 1rem;
+	}
+}
+
+.event-date-box {
+	background: $beacon-green;
+	color: $white;
+	font-size: $small-font-size;
+	
+	margin-right: .5rem;
+	padding: .15rem .5rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	span {
+		
+		line-height: 1;
+		&.box-day {
+			// font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: .15rem;
+		}
+	}
+
+	@include breakpoint(small only) {
+		display: inline-block;
+	}
+
+	@include breakpoint(medium) {
+		display: block;
+		float: left;
+		margin-right:.75rem;
+		margin-top:.55rem;
+		padding: .5rem .75rem;
+		height: 70px;
+		width: 68px;
+
+		span {
+			display: block;
+			line-height: 1;
+			&.box-day {
+				font-size: 1.75rem;
+				font-weight: bold;
+				margin-bottom: .25rem;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		margin-right:1rem;
+		margin-top:.75rem;
+		padding: .85rem .75rem .75rem;
+		height: 84px;
+		width: 75px;
+	}
+
+}
+
+
+.event-address {
+	display: block;
+	font-size: $small-font-size;
+}
+
+// .single-facebook-events {
+	#secondary {
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+// }

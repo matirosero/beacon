@@ -27,7 +27,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	 		</p>
 	 		<?php echo beacon_fbevent_link(); ?>
 	 	</section>
-	 	<section class="widget">
+	 	<section class="widget event-form">
 	 		<h3 class="widget-title">Más información</h3>
 			<?php echo do_shortcode('[contact-form-7 id="118" title="Información sobre evento FB"]' ); ?>
 		</section>

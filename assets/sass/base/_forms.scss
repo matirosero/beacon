@@ -38,3 +38,11 @@ input[type="text"]:disabled {
 		color: $white;
 	}
 }
+
+.event-form {
+	#secondary & {
+		label {
+			color: $white;
+		}
+	}
+}
