@@ -21,9 +21,10 @@ body:not(.home):not(.page-template-coaching):not(.page-template-about):not(.page
 	}
 }
 
-.page-section:not(#home-profiles) {
+.page-section:not(#home-profiles):not(#home-events):not(#home-quiz) {
 	border-bottom: 1px solid $light-gray;
-	// background: red;
+}
+.page-section:not(#home-profiles) {
 	@include section-spacing;
 }
 

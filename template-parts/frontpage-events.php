@@ -15,8 +15,8 @@
 		if( $fbe_query->have_posts() ): 
 		while ( $fbe_query->have_posts() ) : $fbe_query->the_post(); ?>
 
-			<section id="home-events">
-			<div class="page-section row" data-equalizer data-equalize-on="large" data-equalize-by-row="true">
+			<section id="home-events" class="page-section">
+			<div class="row" data-equalizer data-equalize-on="large" data-equalize-by-row="true">
 
 
 				<?php if ( has_post_thumbnail() ) : ?>
