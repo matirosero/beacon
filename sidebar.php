@@ -29,7 +29,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	 	</section>
 	 	<section class="widget event-form">
 	 		<h3 class="widget-title">Más información</h3>
-			<?php echo do_shortcode('[contact-form-7 id="118" title="Información sobre evento FB"]' ); ?>
+			<?php echo do_shortcode('[contact-form-7 id="116" title="Información sobre evento FB"]' ); ?>
 		</section>
 	<?php else:
 
