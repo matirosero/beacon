@@ -14,7 +14,15 @@ add_action( 'wp_enqueue_scripts', function() {
 		BEACON_VERSION,
 		''
 	);
+
+	wp_enqueue_style(
+		'google_fonts',
+		'https://fonts.googleapis.com/css?family=Roboto+Slab',
+		false
+	);
 } );
+
+
 
 /**
  * Enqueue scripts

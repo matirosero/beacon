@@ -1,4 +1,5 @@
 .top-bar {
+    font-family: $header-font-family;
     // padding: 0;
     .menu-item-social > a > span {
     	@include hide-for(medium);
