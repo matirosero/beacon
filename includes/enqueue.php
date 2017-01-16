@@ -20,6 +20,12 @@ add_action( 'wp_enqueue_scripts', function() {
 		'https://fonts.googleapis.com/css?family=Roboto+Slab',
 		false
 	);
+
+	wp_enqueue_style(
+		'motionui',
+		'https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css',
+		false
+	);
 } );
 
 

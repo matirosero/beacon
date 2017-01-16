@@ -10,8 +10,8 @@
 get_header(); ?>
 
 <?php //get_template_part( 'template-parts/frontpage', 'hero-v1' ); ?>
-<?php //get_template_part( 'template-parts/frontpage', 'hero-scrollto' ); ?>
-<?php get_template_part( 'template-parts/frontpage', 'hero-panes' ); ?>
+<?php //get_template_part( 'template-parts/frontpage', 'hero-panes' ); ?>
+<?php get_template_part( 'template-parts/frontpage', 'hero-orbit' ); ?>
 
 <div id="primary" class="content-area">
 

@@ -1,4 +1,5 @@
-#pane-target {
+#pane-target,
+.orbit {
 	background-color: $beacon-orange;
 	height: 70vh;
 	max-height: 110vw;
@@ -8,14 +9,16 @@
 		color: $white;
 	}
 }
-#hero-panes {
+#hero-panes,
+.orbit-container {
 	width: 400vw;
 	@include reset-list;
 }
 
 $panel-link-width: 40px;
 
-.pane {
+.pane,
+.orbit-slide {
 	display: block;
 	float:left;
 	height: 70vh;
