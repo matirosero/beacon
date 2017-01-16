@@ -37,3 +37,9 @@ $answer-bg-choose: $beacon-green;
 		background: #eee;
 	}
 }
+
+.link-quiz {
+	background: $beacon-green url(../img/quiz-link-bg.jpg);
+	background-size: cover;
+	text-align: center;
+}

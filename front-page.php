@@ -21,6 +21,9 @@ get_header(); ?>
 		// if ( have_posts() ) :
 		// 	while ( have_posts() ) : the_post(); ?>
 
+		<?php get_template_part( 'template-parts/frontpage', 'events' ); ?>
+
+
 		<section id="home-how-help" class="page-section">
 			<div class="row">
 				<div class="medium-4 columns">
@@ -35,14 +38,16 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php get_template_part( 'template-parts/frontpage', 'events' ); ?>
 
 
-		<?php /*
-		<section id="home-test">
-			test
+
+		<section id="home-quiz" class="page-section link-quiz">
+			<div class="row column">
+				<h2 class="section-title">¿Tiene dudas sobre su próximo paso?</h2>
+				<p><a class="button" href="<?php echo get_page_link(93); ?>#coaching-steps"><strong>Test gratuito:</strong> Descubra más sobre usted</a></p>
+			</div>
 		</section>
-		*/ ?>
+
 
 		<section id="home-services" class="page-section">
 			<div class="row">
