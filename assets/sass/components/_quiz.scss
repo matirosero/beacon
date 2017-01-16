@@ -39,12 +39,26 @@ $answer-bg-choose: $beacon-green;
 }
 
 .link-quiz {
-	background: $beacon-green url(../img/quiz-link-bg.jpg);
+	background-image: url(../img/quiz-link-bg-small.jpg);
 	background-size: cover;
+	background-position-y: 50%; //vertical axis
+	background-position-x: 50%; //horizontal axis
 	text-align: center;
 
 	.button strong {
 		text-transform: uppercase;
 		display: block;
+	}
+	@include breakpoint(medium) {
+		background-image: url(../img/quiz-link-bg-medium.jpg);
+	}
+	@include breakpoint(large) {
+		background-image: url(../img/quiz-link-bg-large.jpg);
+	}
+	@include breakpoint(xlarge) {
+		background-image: url(../img/quiz-link-bg-xlarge.jpg);
+	}
+	@include breakpoint(xxlarge) {
+		background-image: url(../img/quiz-link-bg-xxlarge.jpg);
 	}
 }
