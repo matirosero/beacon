@@ -1,0 +1,21 @@
+.orbit {
+	background-color: $beacon-orange;
+	height: 70vh;
+	max-height: 110vw;
+	width: 100%;
+	overflow: auto;
+	a {
+		color: $white;
+	}
+}
+
+.orbit-slide {
+	display: block;
+	float:left;
+	height: 70vh;
+	max-height: 110vw;
+	margin:0;
+	position: relative;
+	text-align: center;
+	width: 100vw;
+}

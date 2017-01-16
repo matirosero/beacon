@@ -1,7 +1,8 @@
 <header id="home-header" class="clearfix">
-	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
 		<ul class="orbit-container">
-
+		    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+		    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 			<?php
 
 			$panes = get_post_meta( get_the_ID(), 'frontpage_header', true );
@@ -95,19 +96,7 @@
 								</p>
 							</div>';
 
-						if ($i != 1 ) {
-				        	echo '<a href="" class="previous-pane"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>';
-				        }
-				        if ($i != $count ) {
-				        	echo '<a href="" class="next-pane"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>';
-				        }
-				        // if ($i == $count ) {
-				        // 	echo '<a href="" class="first-pane">Start</a>';
-				        // }
-
 			        echo '</li>';
-
-
 
 			        //Advance counter
 			        $i++;
