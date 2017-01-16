@@ -10,7 +10,7 @@
     }
   }
   #secondary &,
-  .pane:not(.first) & {
+  .orbit-slide:not(.first) & {
     background-color: $beacon-green;
     @include hover {
       background-color: scale-color($beacon-green, $lightness: -15%);

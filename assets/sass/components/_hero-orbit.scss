@@ -1,3 +1,4 @@
+$panel-link-width: 40px;
 .orbit {
 	background-color: $beacon-orange;
 	height: 70vh;
@@ -18,4 +19,105 @@
 	position: relative;
 	text-align: center;
 	width: 100vw;
+}
+
+.slide-img {
+	background-size:cover;
+	background-image: url('../img/home-header-slide1.jpg');
+	// opacity: 0.25; //so it looks orange on small
+	background-position-x: center; //horizontal
+	background-position-y: 0; //vertical
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index:4;
+	left:0;
+
+	.first & {
+		background-image: url('../img/home-header-1-700.jpg');
+		background-position-x: 100%;
+		// background-position-x: 0;
+		// opacity: 1;
+	}
+
+	@include breakpoint(medium) {
+		// opacity: 1;
+		li:not(.first) & {
+			width: 50%;
+			background-image: url('../img/home-header-slide.jpg');
+		}
+	}
+	@include breakpoint(xlarge) {
+		li:not(.first) & {
+			width: 60%;
+		}
+	}
+	@include breakpoint(xxlarge) {
+		li:not(.first) & {
+			width: 65%;
+		}
+	}
+}
+.slide-content {
+	padding: 0 $panel-link-width;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+  	transform: translateY(-50%);
+	z-index:5;
+	@include breakpoint(medium) {
+		padding-bottom:1rem;
+		.first & {
+			width: 70%;
+			left:0;
+			right: 0;
+			// background-color:red;
+		}
+		li:not(.first) & {
+			width: 50%;
+			right: 0;
+			left:50%;
+		}
+	}
+	@include breakpoint(large) {
+		// padding-bottom:2rem;
+		.first & {
+			// background-color:orange;
+		}
+	}
+	@include breakpoint(xlarge) {
+		// padding-bottom:3rem;
+		.first & {
+			// background-color:blue;
+			width: 60%;
+			left: 5%;
+		}
+		li:not(.first) & {
+			width: 40%;
+			left: 60%;
+		}
+	}
+	@include breakpoint(xxlarge) {
+		.first & {
+			width: 50%;
+			left: 15%;
+			// background-color:purple;
+		}
+		li:not(.first) & {
+			width: 35%;
+			left: 65%;
+		}
+	}
+}
+.slide-logo {
+	margin-bottom: 1rem;
+	@include breakpoint(small only) {
+		img {
+			width: 40vw;
+		}
+	}
+	@include breakpoint(medium) {
+		margin-bottom: 2rem;
+	}
 }

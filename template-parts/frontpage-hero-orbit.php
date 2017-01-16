@@ -1,5 +1,5 @@
 <header id="home-header" class="clearfix">
-	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
 		<ul class="orbit-container">
 		    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
 		    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
@@ -44,17 +44,17 @@
 
 				    if ( empty( $img_xlarge ) && empty( $img_medium ) && empty( $img_small ) ) : 
 
-						echo '<div class="pane-img" role="banner" style="background-image: url('.$img.')">&nbsp;</div>';
+						echo '<div class="slide-img" role="banner" style="background-image: url('.$img.')">&nbsp;</div>';
 					else:
 
 						//default image (xxxl) is the fallback
-						$mq = '#pane-img-'.$i.' {
+						$mq = '#slide-img-'.$i.' {
 									background-image: url('.$img.')
 							}';
 
 						if ( !empty( $img_xlarge ) ) :
 							$mq .= '@media only screen and (max-width : 1440px) {
-									#pane-img-'.$i.' {
+									#slide-img-'.$i.' {
 										background-image: url('.$img_xlarge.')
 									}
 								}';
@@ -62,7 +62,7 @@
 
 						if ( !empty( $img_medium ) ) :
 							$mq .= '@media only screen and (max-width : 1024px) {
-								#pane-img-'.$i.' {
+								#slide-img-'.$i.' {
 									background-image: url('.$img_medium.')
 								}
 							}';
@@ -70,13 +70,13 @@
 
 						if ( !empty( $img_small ) ) :
 							$mq .= '@media only screen and (max-width : 700px) {
-								#pane-img-'.$i.' {
+								#slide-img-'.$i.' {
 									background-image: url('.$img_small.')
 								}
 							}';
 						endif;
 
-						echo '<div id="pane-img-'.$i.'" class="pane-img" role="banner">&nbsp;</div>
+						echo '<div id="slide-img-'.$i.'" class="slide-img" role="banner">&nbsp;</div>
 								<style scoped>'
 									.$mq.
 								'</style>
@@ -84,11 +84,11 @@
 					endif;
 
 
-				        // echo '<div class="pane-img">&nbsp;</div>';
+				        // echo '<div class="slide-img">&nbsp;</div>';
 
-				        echo '<div class="pane-content">
-				        	<p class="pane-title">'.$pane['header_description'].'</p>
-								<p class="pane-logo">
+				        echo '<div class="slide-content">
+				        	<p class="slide-title">'.$pane['header_description'].'</p>
+								<p class="slide-logo">
 									<img src="'.$logo.'" alt="Beacon Transition &amp; Life Coaching" />
 								</p>
 								<p class="text-center home-header-cta">
