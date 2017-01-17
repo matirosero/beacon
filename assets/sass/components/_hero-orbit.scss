@@ -1,10 +1,11 @@
 $panel-link-width: 40px;
 .orbit {
-	background-color: $beacon-orange;
-	height: 70vh;
-	max-height: 110vw;
-	width: 100%;
+	background-color: $beacon-green;
+	// height: 70vh;
+	// max-height: 110vw;
+	// width: 100%;
 	overflow: auto;
+	padding: 0;
 	a {
 		color: $white;
 	}
@@ -16,9 +17,11 @@ $panel-link-width: 40px;
 	height: 70vh;
 	max-height: 110vw;
 	margin:0;
+	padding: 0;
 	position: relative;
 	text-align: center;
-	width: 100vw;
+	background-color: $beacon-orange;
+	// width: 100vw;
 }
 
 .slide-img {
