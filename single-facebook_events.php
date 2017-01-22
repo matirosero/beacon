@@ -16,26 +16,13 @@ get_header(); ?>
 		<main id="main" class="site-main row small-collapse medium-uncollapse" role="main" data-equalizer-watch>
 			<div id="" class="large-9 large-centered columns">
 
-
-				
-				<?php
-				// while ( have_posts() ) :
-
-				// 	the_post();
-
-					get_template_part( 'template-parts/content', 'event' );
-
-					// the_post_navigation();
-
-
-
-				// endwhile; ?>
+				<?php get_template_part( 'template-parts/content', 'event' ); ?>
 
 			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
+
 
 	<?php get_sidebar(); ?>
 
