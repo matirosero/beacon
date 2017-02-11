@@ -17,6 +17,7 @@
 		@include breakpoint(medium) {
 			background-image: url('../img/bg-coaching-1024.jpg');
 			overflow: hidden;
+			min-height: 475px;
 		}
 		@include breakpoint(large) {
 			background-image: url('../img/bg-coaching-1920.jpg');
