@@ -11,7 +11,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 } ?>
 
-<aside id="secondary" class="widget-area medium-4 medium-pull-8 large-3 large-pull-9 columns" role="complementary" data-equalizer-watch>
+<aside id="secondary" class="equal widget-area medium-4 medium-pull-8 large-3 large-pull-9 columns" role="complementary" data-equalizer-watch>
 
 	<?php 
 	if (is_singular( 'facebook_events' ) ) : ?>

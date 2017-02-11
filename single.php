@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="row expanded" data-equalizer data-equalize-on="medium">
 
-	<div id="primary" class="content-area medium-8 medium-push-4 large-9 large-push-3 columns">
+	<div id="primary" class="equal content-area medium-8 medium-push-4 large-9 large-push-3 columns">
 
 		<main id="main" class="site-main row small-collapse medium-uncollapse" role="main" data-equalizer-watch>
 			<div id="" class="large-9 large-centered columns">

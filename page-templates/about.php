@@ -64,15 +64,15 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class('profile odd row expanded'); ?> data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
 				<?php
 
-				$profile_image_class = 'profile-image medium-4 columns';
-				$profile_bio_class = 'profile-image medium-8 columns';
+				$profile_image_class = 'equal profile-image medium-4 columns';
+				$profile_bio_class = 'equal profile-image medium-8 columns';
 
 			else: ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class('profile even row expanded'); ?> data-equalizer data-equalize-on="medium" data-equalize-by-row="true">
 			<?php
 
-				$profile_image_class = 'profile-image medium-4 medium-push-8 columns';
-				$profile_bio_class = 'profile-image medium-8 medium-pull-4 columns';
+				$profile_image_class = 'equal profile-image medium-4 medium-push-8 columns';
+				$profile_bio_class = 'equal profile-image medium-8 medium-pull-4 columns';
 
 			endif;
 
