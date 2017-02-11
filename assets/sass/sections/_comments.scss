@@ -1,9 +1,9 @@
 #comments {
-	margin-top: 1rem;
+	// margin-top: 1rem;
 
-	@include breakpoint(medium) {
-		margin-top: 3rem;
-	}
+	// @include breakpoint(medium) {
+	// 	margin-top: 3rem;
+	// }
 }
 
 .comment-content p {
