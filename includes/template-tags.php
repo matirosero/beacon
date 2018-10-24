@@ -48,20 +48,20 @@ function beacon_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'beacon' ) ); // WPCS: XSS OK.
 		if ( $categories_list && beacon_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'beacon' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<div class="cat-links">' . esc_html__( 'Posted in %1$s', 'beacon' ) . '</div>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', __( ', ', 'beacon' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'beacon' ) . '</span>', $tags_list );
+			printf( '<div class="tags-links">' . __( 'Tagged %1$s', 'beacon' ) . '</div>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<div class="comments-link">';
 		comments_popup_link( esc_html__( 'Leave a comment', 'beacon' ), esc_html__( '1 Comment', 'beacon' ), esc_html__( '% Comments', 'beacon' ) );
-		echo '</span>';
+		echo '</div>';
 	}
 
 	edit_post_link(

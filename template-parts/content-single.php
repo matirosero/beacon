@@ -28,6 +28,14 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+		<?php if ( function_exists( 'sharing_display' ) ) {
+		    sharing_display( '', true );
+		} elseif ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+
+    			echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
+
+		} ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

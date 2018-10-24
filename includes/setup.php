@@ -36,6 +36,9 @@ add_action( 'after_setup_theme', function() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+
+	add_image_size('beacon-small', 200, 108, true);
+
 	// This theme uses wp_nav_menu() in one location.
 	// register_nav_menus( array(
 	// 	'primary' => esc_html__( 'Primary Menu', 'beacon' ),
@@ -53,17 +56,7 @@ add_action( 'after_setup_theme', function() {
 		'caption',
 	) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'beacon_custom_background_args', array(

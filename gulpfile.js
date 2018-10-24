@@ -29,7 +29,7 @@ var paths = {
 	imgPath: 'assets/img/'
 };
 
-var bsProxy = 'beacon.dev';
+var bsProxy = 'beacon.test';
 
 
 ////////////////////////////////////////////////////////////////////////////////
