@@ -1,8 +1,8 @@
 <header id="home-header" class="clearfix">
 	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
 		<ul class="orbit-container">
-		    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-2x fa-caret-left" aria-hidden="true"></i></button>
-		    <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fa fa-2x fa-caret-right" aria-hidden="true"></i></button>
+		    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="icon-left-dir" aria-hidden="true"></i></button>
+		    <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="icon-right-dir" aria-hidden="true"></i></button>
 			<?php
 
 			$panes = get_post_meta( get_the_ID(), 'frontpage_header', true );

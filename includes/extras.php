@@ -70,11 +70,11 @@ function beacon_wp_nav_menu_items( $items, $args, $ajax = false ) {
 	            if ( $active_site == 'email' ) {
 	                $items .= '<li class="'.esc_attr( $class ).'">
 	                    <a target="_blank" href="mailto:' . antispambot( is_email( get_theme_mod( $active_site ) ) ) . '">
-	                        <i class="fa fa-lg fa-envelope"></i> <span>'.ucfirst($active_site).'</span></a>
+	                        <i class="icon-envelope"></i> <span>'.ucfirst($active_site).'</span></a>
 	                </li>';
 	            } else {
 	                $items .= '<li class="'.esc_attr( $class ).'">
-	                    <a target="_blank" href="'.esc_url( get_theme_mod( $active_site) ).'"> <i class="fa fa-lg fa-'.$active_site.'"></i> <span>'.ucfirst($active_site).'</span></a>
+	                    <a target="_blank" href="'.esc_url( get_theme_mod( $active_site) ).'"> <i class="icon-'.$active_site.'"></i> <span>'.ucfirst($active_site).'</span></a>
 	                </li>';
 	            }
 	        }
@@ -89,7 +89,7 @@ function beacon_wp_nav_menu_items( $items, $args, $ajax = false ) {
  * Modify Excerpt: change [...] tp Read More 
  */
 function new_excerpt_more( $more ) {
-	return '... </p><p><a class="button read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'beacon') . ' <i class="fa fa-arrow-right" aria-hidden="true"></i></a>';
+	return '... </p><p><a class="button read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'beacon') . ' <i class="icon-right-dir" aria-hidden="true"></i></a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 

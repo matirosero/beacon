@@ -18,10 +18,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 		<section class="widget">
 	 		<p class="event-date">
-	 			<i class="fa fa-clock-o fa-fw" aria-hidden="true"></i> <time><?php echo beacon_fbevent_date('long'); ?></time>
+	 			<i class="icon-clock" aria-hidden="true"></i> <time><?php echo beacon_fbevent_date('long'); ?></time>
 	 		</p>
 	 		<p class="event-location">
-	 			<i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> <strong><?php echo fbe_field('venue_name'); ?></strong>
+	 			<i class="icon-location" aria-hidden="true"></i> <strong><?php echo fbe_field('venue_name'); ?></strong>
 	 			
 	 			<span class="event-address"><?php echo fbe_field('location'); ?></span>
 	 		</p>

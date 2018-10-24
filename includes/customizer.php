@@ -97,7 +97,7 @@ function my_social_media_icons() {
         foreach ( $active_sites as $active_site ) {
 
             /* setup the class */
-	        $class = 'fa fa-' . $active_site;
+	        $class = 'icon-' . $active_site;
 
             if ( $active_site == 'email' ) {
                 ?>

@@ -1,7 +1,7 @@
 <?php
 
 function beacon_fbevent_link() {
-	$link = '<a href="'.get_fbe_field('fb_event_uri').'" class="button"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i> Ver evento en Facebook</a>';
+	$link = '<a href="'.get_fbe_field('fb_event_uri').'" class="button"><i class="icon-facebook-square" aria-hidden="true"></i> Ver evento en Facebook</a>';
 	return $link;
 }
 

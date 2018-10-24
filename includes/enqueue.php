@@ -54,7 +54,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	);
 
 	//FontAwesome
-	wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/44d4afc856.js', array(), '4.7.0', false );
+	// wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/44d4afc856.js', array(), '4.7.0', false );
 
 	//Animate coaching benefits
 	if ( is_page_template( 'page-templates/coaching.php' ) ) {
